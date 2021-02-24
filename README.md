@@ -10,7 +10,7 @@
 cd C:/repos
 git clone https://github.com/Altinn/altinn-infoportal
 ```
-2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable into the new `altinn-infoportal` folder.
+2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable for your OS into the new `altinn-infoportal` folder.
    
 3. Navigate to folder and run Hugo
 
