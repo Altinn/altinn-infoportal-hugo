@@ -9084,7 +9084,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: subpixel-antialiased;
   color: #000000;
-  letter-spacing: normal;
+  letter-spacing: 1px; /* Altinn-DIN adjustment */
   background-color: #EFEFEF; }
 
 ::-moz-selection,
