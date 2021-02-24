@@ -9084,7 +9084,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: subpixel-antialiased;
   color: #000000;
-  letter-spacing: 1px; /* Altinn-DIN adjustment */
+  letter-spacing: 0.6px; /* Altinn-DIN adjustment */
   background-color: #EFEFEF; }
 
 ::-moz-selection,
@@ -13372,6 +13372,7 @@ a.a-modal-close {
   min-height: 550px;
   max-height: 792px;
   margin-bottom: 36px;
+  letter-spacing: 1px; /* Altinn-DIN adjustment */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
