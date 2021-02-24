@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="223px" viewBox="0 0 223 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #01AEF9;">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="locked" transform="translate(70.000000, 46.000000)">
+                <path d="M45.8,98 L35.8,98 L38.2,84.1333333 L37.8,83.7 C35.8,82.4 35,80.6666667 35,78.5 C35,75.0333333 37.8,72 41,72 C44.2,72 47,75.0333333 47,78.5 C47,81.1 45.4,82.8333333 44.2,83.7 L43.8,84.1333333 L45.8,98 L45.8,98 Z" id="Shape"></path>
+                <path d="M75.18,48.5090909 L75.18,30.7927273 C75.18,13.92 60.06,0 42,0 C23.94,0 8.82,13.92 8.82,30.7927273 L8.82,48.5090909 L0,48.5090909 L0,116 L84,116 L84,48.5090909 L75.18,48.5090909 Z M17.22,30.7927273 C17.22,18.56 28.56,8.43636364 42,8.43636364 C55.44,8.43636364 66.78,18.56 66.78,30.7927273 L66.78,48.5090909 L17.22,48.5090909 L17.22,30.7927273 Z M75.6,107.563636 L8.4,107.563636 L8.4,56.9454545 L75.6,56.9454545 L75.6,107.563636 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

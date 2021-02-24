@@ -1,0 +1,24 @@
+﻿.autocompleteList {
+    border: 1px solid #000;
+    border-top: none;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 35px;
+    padding: 5px 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.autocompleteList:empty {
+    display: none;
+}
+
+.autocompleteList li {
+    padding: 3px 5px;
+}
+
+.autocompleteList li:hover {
+    background-color: pink;
+}

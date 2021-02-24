@@ -1,0 +1,65 @@
+# Header
+- id: jump-to-main-content
+  translation: Jump to the main content
+- id: jump-to-main-menu
+  translation: Jump to the main menu
+- id: jump-to-search
+  translation: Jump to search
+- id: inbox
+  translation: inbox
+- id: all-forms
+  translation: all forms
+- id: profile
+  translation: profile
+- id: language
+  translation: Language
+- id: login
+  translation: Log in
+- id: login-my-profile
+  translation: Login/My profile
+- id: search
+  translation: Search
+- id: to-the-frontpage
+  translation: To the frontpage
+- id: show-hide-menu
+  translation: Show/hide menu
+
+# Frontpage
+- id: altinn-your-dialogue
+  translation: Altinn - your digital government dialogue.
+- id: here-you-find
+  translation: Here you'll find forms, messages and relevant information.
+- id: and-see-your-inbox
+  translation: and see your inbox
+
+# Help
+- id: what-can-we-help-you-with
+  translation: What can we help you with?
+
+# News
+- id: news
+  translation: News
+- id: latest-news
+  translation: Latest news
+- id: show-all-news
+  translation: Show all news
+
+# Footer
+- id: about-altinn
+  translation: About Altinn
+- id: feeling-stuck
+  translation: Feeling stuck?
+- id: help-and-contact
+  translation: hjelp and contact
+- id: privacy-and-cookies
+  translation: Privacy and cookies
+- id: search-for-content
+  translation: Search for content
+- id: service-announcements
+  translation: Service announcements
+- id: start-and-run-business
+  translation: start and run business
+- id: to-the-top
+  translation: To the top
+- id: write-us
+  translation: Write us

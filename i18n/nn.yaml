@@ -1,0 +1,65 @@
+# Header
+- id: jump-to-main-content
+  translation: Hopp til hovedinnholdet
+- id: jump-to-main-menu
+  translation: Hopp til hovedmeny
+- id: jump-to-search
+  translation: Hopp til søk
+- id: inbox
+  translation: innboks
+- id: all-forms
+  translation: alle skjema
+- id: profile
+  translation: profil
+- id: language
+  translation: Language
+- id: login
+  translation: Logg inn
+- id: login-my-profile
+  translation: Logg inn/Min profil
+- id: search
+  translation: Søk
+- id: to-the-frontpage
+  translation: Til forsiden
+- id: show-hide-menu
+  translation: Vis/skjul meny
+
+# Frontpage
+- id: altinn-your-dialogue
+  translation: Altinn - din digitale dialog med det offentlige.
+- id: here-you-find
+  translation: Her finner du skjema, meldinger og relevant informasjon.
+- id: and-see-your-inbox
+  translation: og sjekk din innboks
+
+# Help
+- id: what-can-we-help-you-with
+  translation: Hva kan vi hjelpe deg med?
+
+# News
+- id: news
+  translation: Nyheiter
+- id: latest-news
+  translation: Siste nytt
+- id: show-all-news
+  translation: Vis alle nyheiter
+
+# Footer
+- id: about-altinn
+  translation: Om Altinn
+- id: feeling-stuck
+  translation: Står du fast?
+- id: help-and-contact
+  translation: hjelp og kontakt
+- id: privacy-and-cookies
+  translation: Personvern og cookies
+- id: search-for-content
+  translation: Søk etter innhald
+- id: service-announcements
+  translation: Driftsmeldingar
+- id: start-and-run-business
+  translation: starte og drive bedrift
+- id: to-the-top
+  translation: Til toppen
+- id: write-us
+  translation: Skriv til oss

@@ -1,0 +1,155 @@
+<!-- Begin .header -->
+<!-- Skip to main content -->
+<nav class="a-jumpnav">
+  <ul class="no-decoration d-flex">
+    <li><a class="sr-only sr-only-focusable" href="#content">{{ T "jump-to-main-content" }}</a></li>
+    <li><a class="sr-only sr-only-focusable" href="#primary-nav">{{ T "jump-to-main-menu" }}</a></li>
+    <li><a class="sr-only sr-only-focusable" href="#search">{{ T "jump-to-search" }}</a></li>
+  </ul>
+</nav>
+<header class="a-header ">
+  <!-- Begin .container -->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!-- Begin Proxy content container, for inclusion in more than one place -->
+        <div class="a-js-propagatedContentOrigin droplang">
+          <!-- Begin #a-dropdown-languages - -->
+        </div><!-- End Proxy content container -->
+
+        <!-- Begin .a-globalNav -->
+        <nav class="a-globalNav " id="primary-nav">
+          <a href="/" class="a-globalNav-logo">
+            <img src="/Static/img/a-logo-blue.svg" alt="Altinn logo" class="a-logo a-modal-top-logo ">
+            <span class="sr-only">{{ T "to-the-frontpage"}}</span>
+          </a>
+
+          <button class="navbar-toggler d-md-none" type="button"><span class="sr-only">{{ T "show-hide-menu"}}</span></button>
+          <div class="collapse navbar-toggleable-sm a-globalNav-main" id="exCollapsingNavbar2">
+            <ul id="exCollapsingNavbar">
+              <li class="d-md-none">
+                <div class="form-group a-form-group">
+                  <label class="a-form-label sr-only" for="text-input-search-12">
+                    {{ T "search-for-content" }}
+                  </label>
+                  <div class="a-form-group-items input-group">
+                    <input type="search" class="form-control a-hasButton" id="text-input-search-12"
+                      name="search-input-field-mob" placeholder="{{ T `search-for-content` }}" data-val="true">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="button" name="search-button-mob">
+                        <i class="ai ai-search" aria-hidden="true">
+                          <span class="sr-only">{{ T "search" }}</span>
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="d-md-none dropdown">
+                <a class="nav-link dropdown-toggle a-languageSwitcher" aria-expanded="false" data-toggle="dropdown"
+                  aria-haspopup="true" lang="en" href="#">
+                  language
+                </a>
+                <div class="dropdown-menu a-dropdown-languages a-dropdownTriangle">
+                  {{ if .Site.IsMultiLingual }}
+                    {{ range .AllTranslations }}
+                    <a aria-hidden="true" class="dropdown-item" href="{{ .URL }}">
+                      <img src="/Static/img/{{ .Language }}.svg" class="a-iconLeft a-flag" alt="" />
+                      <p>
+                        <span class="a-h3">{{ .Language.LanguageName }}</span><br>
+                        {{ if eq .Language.Lang "nb" }}
+                        <span>Alt innhold er tilgjengelig på bokmål.</span>
+                        {{ else if eq .Language.Lang "en" }}
+                        <span>Some content is available in english.</span>
+                        {{ else if eq .Language.Lang "nn" }}
+                        <span>Noko av innhaldet er tilgjengeleg på nynorsk.</span>
+                        {{ end }}
+                      </p>
+                    </a>
+                    {{ end }}
+                  {{ end }}
+                </div>
+              </li>
+              <li class="a-js-propagatedContentDestination replace-me" data-refclass="droplang"></li>
+
+
+              <li>
+                <a href="/ui/messagebox/">
+                  <span class="a-hvr-underline">{{ T "inbox" }}</span>
+                </a>
+              </li>
+              <li>
+                <a class="" href="{{ with .Site.GetPage `/skjemaoversikt`}}{{.URL}}{{end}}">
+                  <span class="a-hvr-underline">{{ T "all-forms" }}</span>
+                </a>
+              </li>
+              <li>
+                <a href="/ui/profile/">
+                  <span class="a-hvr-underline">{{ T "profile" }}</span>
+                </a>
+              </li>
+              <li class="d-md-none">
+                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.URL}}{{end}}">
+                  {{ T "start-and-run-business" }}
+                </a>
+              </li>
+              <li class="d-md-none">
+                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/om-altinn`}}{{.URL}}{{end}}">
+                  {{ T "about-altinn" }}
+                </a>
+              </li>
+              <li class="d-md-none">
+                <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.URL}}{{end}}">
+                  <i class="ai ai-nw ai-nw-pr ai-phone" aria-hidden="true"></i> {{ T "help-and-contact" }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </nav> <!-- End .a-globalNav -->
+        <ul class="nav nav-pills a-header-options" id="nav-list">
+          <li class="nav-item dropdown d-none d-md-block">
+            <a lang="en" class="nav-link dropdown-toggle a-languageSwitcher" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" href="#">
+              {{ T "language" }}
+            </a>
+            <div class="dropdown-menu a-dropdown-languages a-dropdownTriangle">
+
+              {{ if .Site.IsMultiLingual }}
+                {{ range .AllTranslations }}
+                <a class="dropdown-item" href="{{ .URL }}">
+                  <img src="/Static/img/{{ .Language }}.svg" class="a-iconLeft a-flag" alt="" />
+                  <p>
+                    <span class="a-h3">{{ .Language.LanguageName }}</span><br>
+                    {{ if eq .Language.Lang "nb" }}
+                    <span>Alt innhold er tilgjengelig på bokmål.</span>
+                    {{ else if eq .Language.Lang "en" }}
+                    <span>Some content is available in english.</span>
+                    {{ else if eq .Language.Lang "nn" }}
+                    <span>Noko av innhaldet er tilgjengeleg på nynorsk.</span>
+                    {{ end }}
+                  </p>
+                </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <button class="nav-link dropdown-toggle a-personSwitcher" type="button" data-toggle="dropdown"
+              onclick="location.href = '/ui/messagebox'" aria-haspopup="true" aria-expanded="false">
+              <span class="a-personSwitcher-name">
+                <span class="d-block">{{ T "login" }}</span>
+                <span class="d-block"></span>
+              </span>
+              <i class="ai ai-keyhole-circle a-personSwitcher-icon a-js-onboardingTarget-1" aria-hidden="true">
+
+              </i>
+              <span class="sr-only">{{ T "login-my-profile" }}</span>
+            </button>
+          </li>
+        </ul>
+      </div><!-- End .col -->
+    </div> <!-- End .row -->
+  </div> <!-- End .container -->
+</header> <!-- End .header -->

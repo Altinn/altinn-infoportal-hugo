@@ -1,0 +1,22 @@
+﻿h2 {
+    EditMenuTitle: Heading Styles;
+    EditMenuName:Kapitell Heading;
+}
+h3 {
+    EditMenuName:Mindre kapitell Heading;
+}
+
+ul.connected-bullets {
+    EditMenuTitle: Lister;
+    EditMenuName:Koblet liste;
+}
+
+img.a-articleImage-right {
+    EditMenuTitle: Bilde;
+    EditMenuName: Right-justified image;
+}
+
+.epi-footnote {
+    EditMenuTitle: Ordforklaring;
+    EditMenuName: Ordforklaring blue;
+}

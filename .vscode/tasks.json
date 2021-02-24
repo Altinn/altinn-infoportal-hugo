@@ -1,0 +1,30 @@
+{
+    // See https://code.visualstudio.com/docs/editor/tasks for documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Hugo",
+            "type" :"shell",
+            "command": "${workspaceRoot}/hugo serve --navigateToChanged",
+            "isBackground": true,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Publish",
+            "type" :"shell",
+            "command": "${workspaceRoot}/hugo",
+            "isBackground": false,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}

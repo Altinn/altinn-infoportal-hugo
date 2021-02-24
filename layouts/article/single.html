@@ -1,0 +1,83 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-10 offset-lg-1">
+            <ol class="breadcrumb a-breadcrumb">
+                {{ template "breadcrumb" dict "page" . "value" .LinkTitle }}
+                <!--li class="breadcrumb-item breadcrumb-mobile">
+                    <a class="a-link" href="/om-altinn/">Om Altinn</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <a class="a-link" href="/om-altinn/hva-er-altinn/">Hva er Altinn?</a>
+                </li-->
+            </ol>
+            <h1 class="a-fontBold ">{{ .Params.title }}</h1>
+            <p class="a-leadText" id="leadText">{{ .Params.description }}</p>
+            {{with .Page.Lastmod}}
+            <div class="a-byline">Sist oppdatert {{ .Format "02.01.2006" }}</div>
+            {{end}}
+            <hr class="mt-2 mb-0 d-none d-lg-block" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-8 offset-lg-2 a-text epi-wysiwyg my-2">
+            {{ if and (gt .WordCount 100 ) (.Params.toc) }}
+            <h2>På denne siden</h2>
+            {{ .TableOfContents }}
+            <br>
+            {{ end }}
+
+            {{ .Content }}
+
+            {{ if .Params.didyoufind }}
+            <form class="mt-4 a-dontPrint">
+                <fieldset class="form-group ">
+                    <legend class="a-legend">
+                        Fant du det du lette etter?
+                    </legend>
+
+                    <div class="custom-control custom-radio a-custom-radio a-js-feedbackToggle  custom-control-inline">
+                        <input type="radio" name="customRadio" class="custom-control-input" id="radio1"
+                            value="radio1" />
+                        <label class="custom-control-label a-radioButtons-title" for="radio1">
+                            Ja
+                        </label>
+                    </div>
+                    <div class="custom-control custom-radio a-custom-radio a-js-feedbackToggle  custom-control-inline ">
+                        <input type="radio" name="customRadio" class="custom-control-input" id="radio2"
+                            value="radio2" />
+                        <label class="custom-control-label a-radioButtons-title" for="radio2">
+                            Nei
+                        </label>
+                    </div>
+                </fieldset>
+                <p class="">Takk for tilbakemeldingen.</p>
+                <div class="form-group a-form-group " style="display: none;">
+                    <label for="exampleTextarea" class="a-form-label">Hva savnet du?</label>
+                    <textarea class="form-control a-textarea" rows="3"
+                        placeholder="Gi oss gjerne en tilbakemelding p&#229; hva vi kan forbedre."
+                        id="exampleTextarea"></textarea>
+                </div>
+
+                <button type="button" class="a-btn mt-2" id="send" style="display: none;">
+                    Send
+                </button>
+            </form>
+            {{ end }}
+        </div>
+    </div>
+
+</div>
+</section>
+
+{{ partial "footer.html" . }}
+
+{{define "breadcrumb"}}
+{{if and (.page.Parent) (not .page.Parent.IsHome)}}
+{{$value := (printf "<li class='breadcrumb-item breadcrumb-mobile'><a class='a-link' href='%s'>%s</a></li> / %s" .page.Parent.URL .page.Parent.LinkTitle .value)}}
+{{ template "breadcrumb" dict "page" .page.Parent "value" $value }}
+{{else}}
+{{.value|safeHTML}}
+{{end}}
+{{end}}

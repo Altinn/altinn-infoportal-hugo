@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="223px" viewBox="0 0 223 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #01AEF9;">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="write" transform="translate(59.000000, 56.000000)">
+                <polygon id="Shape" points="94 95 0 95 0 48 17.1618257 48 17.1618257 55.8333333 7.80082988 55.8333333 7.80082988 87.1666667 86.1991701 87.1666667 86.1991701 51.9166667 94 51.9166667"></polygon>
+                <path d="M79.9565217,0 L29.0869565,50.8695652 L24,81 L54.1304348,75.5217391 L105,24.6521739 L79.9565217,6.95096155e-15 L79.9565217,0 Z M50.2173913,68.4782609 L33.3913043,71.2173913 L36.1304348,54.3913043 L79.9565217,11.3478261 L84.2608696,15.6521739 L43.9565217,55.5652174 L49.4347826,61.0434783 L89.7391304,20.7391304 L94.0434783,25.0434783 L50.2173913,68.4782609 L50.2173913,68.4782609 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

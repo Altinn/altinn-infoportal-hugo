@@ -1,0 +1,61 @@
+<div class="container a-containerFooter">
+    <footer class="a-footer">
+        <div class="row a-footer-firstRow">
+            <div class="col-md-4 d-none d-md-block">
+                <div class="form-group a-form-group  ">
+                    <label class="a-form-label  sr-only  " for="text-input-search-11">{{ T "search-for-content"}}</label>
+                    <div class="a-form-group-items input-group">
+                        <input class="form-control a-hasButton" type="search" placeholder="{{ T `search-for-content` }}"
+                            name="search-input-field-footer" data-val="true" id="text-input-search-11">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button" name="search-button-footer">
+                                <i class="ai ai-search" aria-hidden="true"></i>
+                                <span class="sr-only">{{ T "search"}}</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <nav class="a-footerNav">
+                    <ul>
+                        <li>
+                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.URL}}{{end}}">
+                                <i class="ai ai-nw ai-corp" aria-hidden="true"></i> {{ T "start-and-run-business"}}
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.URL}}{{end}}">
+                                <i class="ai ai-nw ai-phone" aria-hidden="true"></i> {{ T "help-and-contact"}}
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="a-footerExtraNav">
+                    Digitaliseringsdirektoratet,
+                    <span class="a-footerExtraNav-name">Postboks 1382 Vika, 0114 Oslo. Org.nr. 991 825 827</span>
+                    <div class="a-footerExtraNav-toTop d-md-none">
+                        <a href="#top" class="a-linkArea a-btn ">
+                            {{ T "to-the-top" }}
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a class="d-none d-md-inline" href="{{ with .Site.GetPage `/om-altinn`}}{{.URL}}{{end}}">{{ T "about-altinn"}}</a>
+                        </li>
+                        <li>
+                            <a href="{{ with .Site.GetPage `/om-altinn/driftsmeldinger`}}{{.URL}}{{end}}">{{ T "service-announcements"}}</a>
+                        </li>
+                        <li>
+                            <a href="{{ with .Site.GetPage `/om-altinn/personvern`}}{{.URL}}{{end}}">{{ T "privacy-and-cookies"}}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</div>

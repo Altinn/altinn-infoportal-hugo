@@ -1,0 +1,23 @@
+﻿@font-face {
+    font-family: DIN-light;
+    src: url(https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN.woff2) format('woff2'),
+         url(https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN.woff) format('woff')
+}
+
+@font-face {
+    font-family: DIN-reg;
+    src: url(https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN.woff2) format('woff2'),
+         url(https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN.woff) format('woff')
+}
+
+@font-face {
+    font-family: DIN-medium;
+    src: url(https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2) format('woff2'),
+         url(https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff) format('woff')
+}
+
+@font-face {
+    font-family: DIN-bold;
+    src: url(https://altinncdn.no/fonts/altinn-din/woff2/Altinn-DIN-Bold.woff2) format('woff2'),
+         url(https://altinncdn.no/fonts/altinn-din/woff/Altinn-DIN-Bold.woff) format('woff')
+}

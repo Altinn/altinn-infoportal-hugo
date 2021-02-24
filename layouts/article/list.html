@@ -1,0 +1,52 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 offset-lg-3 a-articleSearch">
+            <div class="form-group a-form-group  a-form-group-large">
+                <label class="a-form-label sr-only" for="search">{{ T "search-for-content" }}</label>
+                <div class="a-form-group-items input-group">
+                    <input class="form-control a-hasButton" type="text" placeholder="{{ T `search-for-content` }}"
+                        name="search-input-field" data-val="true" id="search" value="">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" name="search-button">
+                            <i class="ai ai-search" aria-hidden="true"></i>
+                            <span class="sr-only">{{ T "search" }}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="content" tabindex="-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-10 offset-lg-1 pb-2">
+                <h1 class="a-fontBold a-pageTitle">{{.Title}}</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid a-jumbotron a-jumbotron-bottom a-jumbotron--autoHeight a-jumbotron-dark py-6"
+            style="background-color: #022F51; ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+                        <div class="a-list-container a-list-large pb-3">
+                            <ul class="a-list a-list-noIcon a-list-large a-list-2col">
+                            {{ range .Pages }}
+                                {{ .Render "li" }}
+                            {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
