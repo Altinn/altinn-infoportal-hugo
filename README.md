@@ -5,21 +5,17 @@
 ## Running altinn-infoportal locally
 
 1. Clone the repo (assumes you've installed [Git](https://git-scm.com/downloads)):
-
-```shell
-cd C:/repos
-git clone https://github.com/Altinn/altinn-infoportal
-```
-2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable for your OS into the new `altinn-infoportal` folder.
-   
+   ```shell
+   cd C:/repos
+   git clone https://github.com/Altinn/altinn-infoportal
+   ```
+2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable for your OS into the new `altinn-infoportal` folder.   
 3. Navigate to folder and run Hugo
-
-```shell
-cd altinn-infoportal
-./hugo serve --navigateToChanged
-```
-
-Which will result in output similar to:
+   ```shell
+   cd altinn-infoportal
+   ./hugo serve --navigateToChanged
+   ```
+   Which will result in output similar to:
 
 ```cmd
 Start building sites …
