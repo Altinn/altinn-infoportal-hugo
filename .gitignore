@@ -1,0 +1,8 @@
+public
+*.exe
+*.doc
+*.docx
+*.db
+resources/_gen
+.vs
+.DS_Store
