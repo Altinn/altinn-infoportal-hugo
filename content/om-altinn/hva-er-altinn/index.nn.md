@@ -3,6 +3,7 @@ title: Kva er Altinn?
 description: "Altinn er ein internettportal for digital dialog mellom næringslivet, privatpersonar og offentlege etatar.
               Altinn er også ein teknisk plattform, som offentlege verksemder kan nytte for å lage digitale tenester."
 lastmod: 2017-12-04
+weight: 1
 ---
 
 Altinn blir vidareutvikla, drifta og forvalta av Altinn-samarbeidet, som består av ei rekke offentlege etatar.

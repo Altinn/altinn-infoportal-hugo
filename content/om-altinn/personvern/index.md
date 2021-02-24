@@ -3,6 +3,7 @@ title: Altinns personvernerklæring
 linktitle: Personvernerklæring
 description: Personvernerklæringen gir informasjon om hvilke personopplysninger som behandles i Altinn-løsningen, og hvordan disse brukes. Denne erklæringen oppdateres fortløpende.
 lastmod: 2019-12-18
+weight: 3
 toc: true
 ---
 

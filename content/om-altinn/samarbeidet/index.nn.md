@@ -2,6 +2,7 @@
 title: Om Altinn-samarbeidet
 description:
 lastmod: 2020-02-17
+weight: 2
 ---
 
 Altinn blei starta som eit samarbeid mellom Skatteetaten, Statistisk sentralbyrå og Brønnøysundregistera i 2002,

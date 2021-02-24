@@ -3,6 +3,7 @@ title: Service announcements
 url: /en/about-altinn/service-announcements
 description: 
 didyoufind: false
+weight: 5
 ---
 
 ## Fjerning av støtte for noen krypteringsalgoritmer

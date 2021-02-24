@@ -2,6 +2,7 @@
 title: Driftsmeldinger
 description: 
 didyoufind: false
+weight: 5
 ---
 
 ## Fjerning av støtte for noen krypteringsalgoritmer

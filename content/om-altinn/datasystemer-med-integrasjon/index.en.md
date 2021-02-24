@@ -2,17 +2,16 @@
 title: Computer systems with integration
 linktitle: Computer systems
 url: /en/about-altinn/computer-systems-with-integration
-description: Her finner du oversikt over hvilke datasystemer (fagsystemer) som har utviklet eller er i ferd med å utvikle integrasjon mot Altinn.
+description: Here you'll find a list of which computer systems (end user systems) that either has developed or is planning to develop integration with Altinn.
 lastmod: 2017-11-01
+weight: 4
 toc: true
 ---
 
-Ta kontakt med den enkelte systemleverandør for detaljer.
-Dersom din leverandør ikke er inkludert i listen, ta kontakt med leverandør for å be om status på når en integrasjon vil foreligge.
+Please contact the system supplier for details.
+If your supplier is not in the list, contact the supplier to ask when an integration will be in place.
 
-Listen blir oppdatert etterhvert som nye leverandører utvikler integrasjon mot Altinn.
-
-## Datasystemer som har utviklet grensesnitt mot Altinn
+## Systems that have developed Altinn integrations
 
 - 24SevenOffice - 24sevenoffice.no 
 - Admin 123 - www.admin123.no
@@ -95,7 +94,7 @@ Listen blir oppdatert etterhvert som nye leverandører utvikler integrasjon mot 
 - Zeta - www.alfa-omega.no
 - Zirius - www.zirius.no
 
-## Leverandører som planlegger å utvikle grensesnitt
+## Systems that are planning to integrate with Altinn
 
 - CSC Solutions - www.csc.com/no
 - Regnskaps- og bedriftssystemer

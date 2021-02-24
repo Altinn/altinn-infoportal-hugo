@@ -3,6 +3,7 @@ title: Driftsmeldingar
 url: /nn/om-altinn/driftsmeldingar
 description: 
 didyoufind: false
+weight: 5
 ---
 
 ## Fjerning av støtte for noen krypteringsalgoritmer

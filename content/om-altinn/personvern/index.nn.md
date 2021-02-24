@@ -3,6 +3,7 @@ title: Personvern og cookies
 linktitle: Personvern 
 description: Personvern er svært viktig for Altinn.
 lastmod: 2017-09-26
+weight: 3
 toc: true
 ---
 

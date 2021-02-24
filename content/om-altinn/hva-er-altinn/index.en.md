@@ -4,6 +4,7 @@ url: /en/about-altinn/what-is-altinn
 description: "Altinn is an internet portal for digital dialogue between businesses, private individuals and public agencies.
               Altinn is also a technical platform that government bodies can use to develop digital services."
 lastmod: 2017-12-04
+weight: 1
 ---
 
 Altinn is developed, operated and managed by the Altinn co-operation, that consists of multiple government bodies.
