@@ -15,8 +15,8 @@
    cd altinn-infoportal
    ./hugo serve --navigateToChanged
    ```
-   Which will result in output similar to:
 
+Which will result in output similar to:
 ```cmd
 Start building sites …
 
