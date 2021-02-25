@@ -2,15 +2,28 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-sm-12 col-lg-6 offset-lg-3 a-articleSearch">
+            <div class="form-group a-form-group  a-form-group-large">
+                <label class="a-form-label sr-only" for="search">{{T "what-can-we-help-you-with"}}</label>
+                <div class="a-form-group-items input-group">
+                    <input class="form-control a-hasButton" type="text" placeholder="{{T `what-can-we-help-you-with`}}" name="search-input-field" data-val="true" id="search" value="">
+                    <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" name="search-button">
+                            <i class="ai ai-search" aria-hidden="true"></i>
+                            <span class="sr-only">{{T "search"}}</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
             <ol class="breadcrumb a-breadcrumb">
-                {{ template "breadcrumb" dict "page" . "value" .LinkTitle }}
-                <!--li class="breadcrumb-item breadcrumb-mobile">
-                    <a class="a-link" href="/om-altinn/">Om Altinn</a>
-                </li>
-                <li class="breadcrumb-item active">
-                    <a class="a-link" href="/om-altinn/hva-er-altinn/">Hva er Altinn?</a>
-                </li-->
+                {{ template "breadcrumb" dict "page" . "value" (printf "<li class='breadcrumb-item active'><a class='a-link' href='%s'>%s</a></li>" .URL .LinkTitle) }}
             </ol>
             <h1 class="a-fontBold ">{{ .Params.title }}</h1>
             <p class="a-leadText" id="leadText">{{ .Params.description }}</p>
@@ -69,15 +82,7 @@
     </div>
 
 </div>
+
 </section>
 
 {{ partial "footer.html" . }}
-
-{{define "breadcrumb"}}
-{{if and (.page.Parent) (not .page.Parent.IsHome)}}
-{{$value := (printf "<li class='breadcrumb-item breadcrumb-mobile'><a class='a-link' href='%s'>%s</a></li> / %s" .page.Parent.URL .page.Parent.LinkTitle .value)}}
-{{ template "breadcrumb" dict "page" .page.Parent "value" $value }}
-{{else}}
-{{.value|safeHTML}}
-{{end}}
-{{end}}

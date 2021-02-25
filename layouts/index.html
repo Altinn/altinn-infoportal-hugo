@@ -10,3 +10,12 @@
 {{ end }}
 
 {{ partial "footer.html" . }}
+
+{{define "breadcrumb"}}
+{{if and (.page.Parent) (not .page.Parent.IsHome)}}
+{{$value := (printf "<li class='breadcrumb-item breadcrumb-mobile'><a class='a-link' href='%s'>%s</a></li> %s" .page.Parent.URL .page.Parent.LinkTitle .value)}}
+{{ template "breadcrumb" dict "page" .page.Parent "value" $value }}
+{{else}}
+{{.value|safeHTML}}
+{{end}}
+{{end}}
