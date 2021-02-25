@@ -5,4 +5,4 @@ description: Form functionality, choosing party and more
 weight: 3
 ---
 
-{{<children description="true" depth="1">}}
+{{<children description="true">}}

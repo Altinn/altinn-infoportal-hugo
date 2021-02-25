@@ -4,4 +4,4 @@ description: Meldinger, filter, videresending, mm.
 weight: 2
 ---
 
-{{<children description="true" depth="1">}}
+{{<children description="true">}}

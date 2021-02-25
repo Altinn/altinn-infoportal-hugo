@@ -4,4 +4,4 @@ description: Funksjonalitet i skjema, aktørval, mm.
 weight: 3
 ---
 
-{{<children description="true" depth="1">}}
+{{<children description="true">}}

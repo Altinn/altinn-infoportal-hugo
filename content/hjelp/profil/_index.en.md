@@ -5,4 +5,4 @@ description: Contact information, roles, rights and more
 weight: 4
 ---
 
-{{<children description="true" depth="1">}}
+{{<children description="true">}}
