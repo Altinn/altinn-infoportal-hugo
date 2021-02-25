@@ -3,7 +3,6 @@ title: Hjelp
 description: "Altinn brukarservice hjelper deg med innlogging, navigering, delegering og vegen frem til eit skjema.
               Har du spørsmål om utfylling av eit skjema må du kontakte etaten som eig det."
 jumbotron_help: true
-fancy: true
 cascade:
   type: help
 ---
