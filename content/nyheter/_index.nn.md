@@ -1,8 +1,8 @@
 ---
 title: Nyheiter
 url: /nn/nyheiter
-description:
 cascade:
   type: news
+  newscategory: altinn
   didyoufind: true
 ---

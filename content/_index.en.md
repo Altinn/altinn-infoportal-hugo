@@ -7,4 +7,4 @@ jumbotron: true
 {{<search>}}
 {{<current-forms>}}
 {{<current-circles>}}
-{{<latest-news>}}
+{{<latest-news count="3" newscategory="altinn">}}

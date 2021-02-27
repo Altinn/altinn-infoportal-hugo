@@ -3,14 +3,13 @@
         <section class="a-articleList ">
             <h2 class="pb-2">{{ T "latest-news"}}</h2>
 
-            {{ range first 3 (where .Site.AllRegularPages "Type" "news") }}
+            {{ range first (.Get "count") (where .Site.AllRegularPages "Params.newscategory" (.Get "newscategory")) }}
                 <article class="a-linkArticle">
                     <h3><a href="{{.URL}}" class="a-link-title">{{.Title}}</a></h3>
                     <p class="a-js-truncate-2">{{.Description}}</p>
                 </article>
             {{ end }}
-
-            <a href="{{ with .Site.GetPage `/nyheter`}}{{.URL}}{{end}}" class="a-linkFeatured ">
+            <a href="{{ with .Page.GetPage `nyheter`}}{{.URL}}{{end}}" class="a-linkFeatured ">
                 {{ T "show-all-news"}} <i class="ai ai-sm ai-nw ai-nw-right ai-arrowright"></i>
             </a>
         </section>
