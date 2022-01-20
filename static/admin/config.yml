@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: main
+  branch: unpublished
   repo: andreasbalevik/altinn-infoportal
 
 local_backend: true
