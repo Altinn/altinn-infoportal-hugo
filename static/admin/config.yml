@@ -19,6 +19,7 @@ collections:
     create: true
     folder: 'content/nyheter'
     path: '{{slug}}/index'
+    filter: {field: "cmsedit", value: true}
     media_folder: ''
     public_folder: ''
     editor:
@@ -26,5 +27,6 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string', i18n: true }
       - { label: 'Last Mod', name: 'lastmod', widget: 'hidden', i18n: true }
+      - { label: 'Last Mod', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
       - { label: 'Description', name: 'description', widget: 'text', i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true}

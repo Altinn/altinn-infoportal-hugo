@@ -3,6 +3,7 @@ title: Betalingsutsettelse ved likviditetsproblemer som følge av koronasituasjo
 linktitle: Betalingsutsettelse
 description:
 lastmod: 2020-06-16
+cmsedit: true
 ---
 
 Næringsdrivende, selskap og privatpersoner som opplever økonomiske problemer som følge av koronasituasjonen,

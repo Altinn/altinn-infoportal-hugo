@@ -2,6 +2,7 @@
 title: Altinn mottar German Design Award
 description: Altinn mottar i dag German Design Award, som hvert år deles ut til gode designprosjekter fra hele Europa.
 lastmod: 2020-02-07
+cmsedit: true
 ---
 
 
