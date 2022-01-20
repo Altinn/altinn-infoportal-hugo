@@ -42,3 +42,23 @@ Press Ctrl+C to stop
 ```
 
 The solution is now running locally at http://localhost:1313
+
+## Content management (Netlify CMS)
+*Work in progress, currently only a limited content types is available*
+
+Altinn-infoportal use Netlify CMS to manage the site content.
+The interface is available at http://localhost:1313/admin and requires an Github account with `write` permission to the repository.
+
+Netlify CMS is configured to be multilanguage supported.
+
+### Workflow
+The CMS is configured with `editorial_workflow` which requires the content to be approved before published.
+
+Workflow steps:
+1. Create content
+2. Save Draft
+3. Review pull request in repository
+4. Merge changes
+5. Published
+
+

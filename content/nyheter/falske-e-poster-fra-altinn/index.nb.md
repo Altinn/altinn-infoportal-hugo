@@ -2,7 +2,6 @@
 title: Falske e-poster fra Altinn
 description: Vi får meldinger fra brukere som har mottatt e-poster fra webmaster@altinn.no. Dette er falske e-poster. Vi ber deg om å slette e-posten.
 lastmod: 2021-01-08
-cmsedit: true
 ---
 
 

@@ -1,7 +1,10 @@
+publish_mode: editorial_workflow
+
 backend:
   name: github
   branch: main
-  repo: altinn/altinn-infoportal
+  repo: andreasbalevik/altinn-infoportal
+  #open_authoring: true 
 
 local_backend: true
 
@@ -14,6 +17,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'nyheter'
+    publish: false # hides publishing controls
     i18n: true
     label: 'Nyheter'
     create: true
