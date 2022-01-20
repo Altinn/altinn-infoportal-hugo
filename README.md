@@ -2,6 +2,8 @@
 
 [![Build status](https://dev.azure.com/brreg/altinn-infoportal/_apis/build/status/altinn-infoportal-CI?label=altinn/infoportal)](https://dev.azure.com/brreg/altinn-infoportal/_build/latest?definitionId=217)
 
+This solution is the implementation of [portfolio #7](https://github.com/Altinn/dig-portfolio/issues/7).
+
 ## Running altinn-infoportal locally
 
 1. Clone the repo (assumes you've installed [Git](https://git-scm.com/downloads)):
