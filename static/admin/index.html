@@ -10,6 +10,13 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script>
 
+      CMS.registerEventListener({
+        name: 'preSave',
+        handler: ({ entry }) => {
+          return entry.get('data').set('lastmod', new Date());
+        },
+      });
+
 /*
       CMS.registerEditorComponent({
         id: "linebreaker",
