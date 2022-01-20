@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: main
-  repo: andreasbalevik/altinn-infoportal
+  repo: altinn/altinn-infoportal
 
 local_backend: true
 
