@@ -3,6 +3,8 @@ title: Driftsmeldinger
 description: 
 didyoufind: false
 weight: 5
+cmsedit: true
+
 ---
 
 ## Fjerning av støtte for noen krypteringsalgoritmer
