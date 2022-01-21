@@ -34,7 +34,7 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1 pb-3 a-newsArchive">
-            {{ $paginator := .Paginate (where .Site.AllRegularPages "Params.newscategory" .Params.newscategory) }}
+            {{ $paginator := .Paginate (where .Site.RegularPages "Params.newscategory" .Params.newscategory) }}
             {{ range $index, $page := $paginator.Pages }}
             {{ .Render "li" }}
             {{ end }}
