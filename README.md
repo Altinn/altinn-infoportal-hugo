@@ -4,6 +4,9 @@
 
 This solution is the implementation of [portfolio #7](https://github.com/Altinn/dig-portfolio/issues/7).
 
+[infoportal.no](https://infoportal.no)
+![Infoportal frontpage](https://user-images.githubusercontent.com/6088624/150494503-4df3e725-432c-4204-ad9d-6b23f8df5319.png "Infoportal frontpage")
+
 ## Running altinn-infoportal locally
 
 1. Clone the repo (assumes you've installed [Git](https://git-scm.com/downloads)):
