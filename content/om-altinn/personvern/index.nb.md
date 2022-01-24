@@ -1,18 +1,14 @@
 ---
 title: Altinns personvernerklæring
 linktitle: Personvernerklæring
-lastmod: 2022-01-21T20:57:54.513Z
+lastmod: 2022-01-24T07:29:37.758Z
+cmsedit: true
 description: Personvernerklæringen gir informasjon om hvilke personopplysninger
   som behandles i Altinn-løsningen, og hvordan disse brukes. Denne erklæringen
   oppdateres fortløpende.
 weight: 3
 toc: true
-cmsedit: true
 ---
-
-
-{{< table-of-contents >}}
-
 ## Behandlingsansvarlig
 
 Alle offentlige virksomheter som deltar i Altinn-samarbeidet, er hver for seg behandlingsansvarlig for sine tjenester i Altinn.

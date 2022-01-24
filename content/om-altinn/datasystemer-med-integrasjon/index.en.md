@@ -1,6 +1,6 @@
 ---
-toc: true
 lastmod: 2017-11-01
+toc: true
 url: /en/about-altinn/computer-systems-with-integration
 title: Computer systems with integration
 linktitle: Computer systems

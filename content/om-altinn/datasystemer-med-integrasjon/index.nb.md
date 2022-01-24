@@ -1,15 +1,13 @@
 ---
 title: Datasystemer med integrasjon
 linktitle: Datasystemer
-lastmod: 2022-01-21T20:01:57.113Z
+lastmod: 2022-01-24T07:29:23.412Z
+cmsedit: true
 description: Her finner du oversikt over hvilke datasystemer (fagsystemer) som
   har utviklet eller er i ferd med å utvikle integrasjon mot Altinn.
 weight: 1
 toc: true
-cmsedit: true
 ---
-{{< table-of-contents >}}
-
 Ta kontakt med den enkelte systemleverandør for detaljer.
 Dersom din leverandør ikke er inkludert i listen, ta kontakt med leverandør for å be om status på når en integrasjon vil foreligge.
 
