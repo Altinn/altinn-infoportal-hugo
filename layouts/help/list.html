@@ -32,6 +32,9 @@
     <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1 pb-3">
             <div class="pb-4">
+                <ol class="breadcrumb a-breadcrumb">
+                    {{ template "breadcrumb" dict "page" . "value" (printf "<li class='breadcrumb-item active'><a class='a-link' href='%s'>%s</a></li>" .URL .LinkTitle) }}
+                </ol>
                 <h1 class="a-fontBold a-pageTitle">
                     {{.Title}}
                 </h1>
