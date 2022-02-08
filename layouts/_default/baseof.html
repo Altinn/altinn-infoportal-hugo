@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Language | default "nb" }}" class="js csstransforms3d">
+
+<head>
+    <title>Altinn - {{ .Title }}</title>
+
+    {{ partial "layout/meta.html" . }}
+
+    <link href="{{"/Static/icon/css/external.css"}}" rel="stylesheet">
+    <link href="{{"/Static/css/style.dist.infoportal.css"}}" rel="stylesheet">
+    <link href="{{"/Static/css/fonts.css"}}" rel="stylesheet">
+</head>
+
+<body class="a-bgWhite">
+    <a id="top"></a>
+    <div class="a-page">
+        {{ partial "topbar.html" . }}
+
+        {{ if and (.IsHome) (.Params.jumbotron) }}
+        {{ partial "jumbotron.html" . }}
+        {{else if (.Params.jumbotron_help) }}
+        {{ partial "jumbotron-help.html" . }}
+        {{else if (.Params.jumbotron_business) }}
+        {{ partial "jumbotron-business.html" . }}
+        {{end}}
+
+        {{ partial "layout/breadcrumb.html" . }}
+
+        {{ block "main" . }}
+        {{ end }}
+
+    </div>
+
+    {{ partial "footer-content.html" . }}
+    {{ partial "custom-footer.html" . }}
+
+</body>
+
+</html>

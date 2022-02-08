@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
@@ -53,7 +52,6 @@
                         placeholder="Gi oss gjerne en tilbakemelding p&#229; hva vi kan forbedre."
                         id="exampleTextarea"></textarea>
                 </div>
-
                 <button type="button" class="a-btn mt-2" id="send" style="display: none;">
                     Send
                 </button>
@@ -61,8 +59,6 @@
             {{ end }}
         </div>
     </div>
-
 </div>
 </section>
-
-{{ partial "footer.html" . }}
+{{ end }}
