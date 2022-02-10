@@ -67,9 +67,7 @@ Workflow steps:
 5. Published
 
 ### Development
-The configuration for Netlify CMS has enabled `local_backen` which enables the CMS to read/store from local repository.
+The configuration for Netlify CMS has enabled `local_backend` which enables the CMS to read/store from local repository.
 This is good if you want to test or make changes in the CMS, but not commit pull requests to master.  
 
 To make this work, run `npx netlify-cms-proxy-server` in a terminal window while running `hugo serve` in another.
-
-

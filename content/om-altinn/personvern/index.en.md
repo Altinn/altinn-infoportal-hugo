@@ -1,5 +1,5 @@
 ---
-lastmod: 2017-26
+lastmod: 2017-09-26
 toc: true
 url: /en/about-altinn/privacy
 title: Privacy and cookies
