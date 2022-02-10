@@ -172,7 +172,7 @@ Mottatte opplysninger er underlagt Google sine retningslinjer for personvern.
 På altinn.no brukes det informasjonskapsler (cookies) for å bedre brukeropplevelsen av nettstedet, samt til statistikkformål.
 Her finner du en oversikt over de informasjonskaplsene vi bruker på altinn.no.
 
-**__RequestVerificationToken__**
+**\_\_RequestVerificationToken\_\_**
 Denne cookien er en sikkerhetsmekanisme som beskytter Altinn fra uautorisert datainnsending.
 Den utløper automatisk når du lukker nettleseren.
 
