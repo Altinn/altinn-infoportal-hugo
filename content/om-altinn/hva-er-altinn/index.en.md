@@ -6,6 +6,7 @@ description: "Altinn is an internet portal for digital dialogue between business
 lastmod: 2017-12-04
 weight: 1
 cmsedit: true
+didyoufind: false
 ---
 
 Altinn is developed, operated and managed by the Altinn co-operation, that consists of multiple government bodies.

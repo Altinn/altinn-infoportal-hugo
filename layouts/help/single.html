@@ -34,49 +34,9 @@
     </div>
     <div class="row">
         <div class="col-sm-12 col-lg-8 offset-lg-2 a-text epi-wysiwyg my-2">
-            {{ if and (gt .WordCount 100 ) (.Params.toc) }}
-            <h2>På denne siden</h2>
-            {{ .TableOfContents }}
-            <br>
-            {{ end }}
-            
+            {{ partial "components/toc.html" . }}
             {{ .Content }}
-
-            {{ if .Params.didyoufind }}
-            <form class="mt-4 a-dontPrint">
-                <fieldset class="form-group ">
-                    <legend class="a-legend">
-                        Fant du det du lette etter?
-                    </legend>
-
-                    <div class="custom-control custom-radio a-custom-radio a-js-feedbackToggle  custom-control-inline">
-                        <input type="radio" name="customRadio" class="custom-control-input" id="radio1"
-                            value="radio1" />
-                        <label class="custom-control-label a-radioButtons-title" for="radio1">
-                            Ja
-                        </label>
-                    </div>
-                    <div class="custom-control custom-radio a-custom-radio a-js-feedbackToggle  custom-control-inline ">
-                        <input type="radio" name="customRadio" class="custom-control-input" id="radio2"
-                            value="radio2" />
-                        <label class="custom-control-label a-radioButtons-title" for="radio2">
-                            Nei
-                        </label>
-                    </div>
-                </fieldset>
-                <p class="">Takk for tilbakemeldingen.</p>
-                <div class="form-group a-form-group " style="display: none;">
-                    <label for="exampleTextarea" class="a-form-label">Hva savnet du?</label>
-                    <textarea class="form-control a-textarea" rows="3"
-                        placeholder="Gi oss gjerne en tilbakemelding p&#229; hva vi kan forbedre."
-                        id="exampleTextarea"></textarea>
-                </div>
-
-                <button type="button" class="a-btn mt-2" id="send" style="display: none;">
-                    Send
-                </button>
-            </form>
-            {{ end }}
+            {{ partial "components/didyoufind.html" . }}
         </div>
     </div>
 

@@ -6,6 +6,7 @@ lastmod: 2017-09-26
 weight: 3
 toc: true
 cmsedit: true
+didyoufind: false
 ---
 
 Når du nyttar deg av tenester i Altinn vil den informasjonen du gir frå deg kun sendast til den eller dei offentlege verksemdene som skal ha informasjonen til sin sakshandsaming.

@@ -8,6 +8,7 @@ description: Personvernerklæringen gir informasjon om hvilke personopplysninger
   oppdateres fortløpende.
 weight: 3
 toc: true
+didyoufind: false
 ---
 ## Behandlingsansvarlig
 
