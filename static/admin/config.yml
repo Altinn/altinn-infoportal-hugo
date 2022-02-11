@@ -65,3 +65,32 @@ collections:
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
 
+  - name: 'textblocks'
+    i18n: true
+    label: 'Tekstblokker'
+    folder: 'content/textblocks'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    view_filters:
+      - label: tblocks for - hjelp
+        field: category
+        pattern: 'HJELP'
+      - label: tblocks for - nyheter
+        field: category
+        pattern: 'NYHETER'
+      - label: tblocks for - starte og drive
+        field: category
+        pattern: 'STARTE OG DRIVE'
+    fields:
+      - { label: UUID, name: uuid, widget: uuid, i18n: duplicate }
+      - 
+        label: "Kategorier"
+        name: "category"
+        widget: "select"
+        options: ["NYHETER", "HJELP", "STARTE OG DRIVE"]
+        multiple: true
+        i18n: duplicate
+      - { label: 'Navn på blokk', name: 'title', widget: 'string', i18n: duplicate }
+      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true}

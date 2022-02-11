@@ -1,0 +1,9 @@
+{{ $id := (.Get "uuid") }}
+
+{{ range where .Site.RegularPages "Section" "textblocks" }}
+  {{ if eq .Params.uuid $id }}
+    {{ if eq .Language $.Site.Language }}
+        <div>{{ .Content }}</div>
+    {{ end }}
+  {{ end }}
+{{ end }}
