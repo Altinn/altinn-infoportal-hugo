@@ -5,6 +5,7 @@ description: "Altinn er en internettportal for digital dialog mellom næringsliv
               Og ikke minst er Altinn et spleiselag og et samarbeid på tvers av offentlige virksomheter."
 lastmod: 2020-04-02
 weight: 1
+cmsedit: true
 ---
 
 Fra 1. januar 2020 er det Digitaliseringsdirektoratet som koordinerer samarbeidet og forvalter Altinn-plattformen

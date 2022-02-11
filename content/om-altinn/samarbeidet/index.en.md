@@ -4,6 +4,7 @@ url: /en/about-altinn/the-altinn-co-operation
 description:
 lastmod: 2019-02-21
 weight: 2
+cmsedit: true
 ---
 
 Altinn started as a co-operation between the Tax Directorate, Statistics Norway and the Brønnøysund Register Center in 2002,
