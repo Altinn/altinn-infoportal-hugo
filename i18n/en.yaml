@@ -63,3 +63,7 @@
   translation: To the top
 - id: write-us
   translation: Write us
+
+# SHORTCODES
+- id: on-this-page
+  translation: On this page

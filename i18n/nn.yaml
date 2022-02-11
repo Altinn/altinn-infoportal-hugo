@@ -63,3 +63,7 @@
   translation: Til toppen
 - id: write-us
   translation: Skriv til oss
+
+# SHORTCODES
+- id: on-this-page
+  translation: På denne sida

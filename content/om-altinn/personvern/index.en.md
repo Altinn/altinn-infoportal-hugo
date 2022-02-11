@@ -1,11 +1,12 @@
 ---
+lastmod: 2017-09-26
+toc: true
+url: /en/about-altinn/privacy
 title: Privacy and cookies
 linktitle: Privacy
-url: /en/about-altinn/privacy
+cmsedit: true
 description: Privacy is very important to us at Altinn.
-lastmod: 2017-26
 weight: 3
-toc: true
 ---
 
 TODO
