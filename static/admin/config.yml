@@ -58,3 +58,4 @@ collections:
       - { label: 'Weight', name: 'weight', widget: 'number', i18n: true }
       - { label: 'Show Table of Content', name: 'toc', widget: boolean, i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      
