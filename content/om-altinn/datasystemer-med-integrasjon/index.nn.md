@@ -3,6 +3,7 @@ title: Datasystem med integrasjon
 linktitle: Datasystem
 description: Her finn du oversikt over kva datasystem (fagsystem) som har utvikla eller er i ferd med å utvikle integrasjon mot Altinn.
 lastmod: 2017-11-01
+didyoufind: false
 weight: 4
 toc: true
 cmsedit: true

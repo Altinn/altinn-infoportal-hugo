@@ -5,6 +5,7 @@ description: "Altinn er ein internettportal for digital dialog mellom næringsli
 lastmod: 2017-12-04
 weight: 1
 cmsedit: true
+didyoufind: false
 ---
 
 Altinn blir vidareutvikla, drifta og forvalta av Altinn-samarbeidet, som består av ei rekke offentlege etatar.

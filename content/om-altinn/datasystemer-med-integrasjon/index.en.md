@@ -1,14 +1,15 @@
 ---
-lastmod: 2017-11-01
-toc: true
-url: /en/about-altinn/computer-systems-with-integration
 title: Computer systems with integration
 linktitle: Computer systems
-cmsedit: true
+url: /en/about-altinn/computer-systems-with-integration
 description: Here you'll find a list of which computer systems (end user
   systems) that either has developed or is planning to develop integration with
   Altinn.
 weight: 4
+toc: true
+didyoufind: false
+lastmod: 2017-11-01
+cmsedit: true
 ---
 
 Please contact the system supplier for details.
