@@ -1,3 +1,4 @@
+/*
 CMS.registerEventListener({
     name: 'preSave',
     handler: ({
@@ -6,3 +7,4 @@ CMS.registerEventListener({
         return entry.get('data').set('lastmod', new Date());
     },
 });
+*/

@@ -4,6 +4,7 @@ linktitle: Betalingsutsettelse
 description:
 lastmod: 2020-06-16
 cmsedit: true
+didyoufind: false
 ---
 
 Næringsdrivende, selskap og privatpersoner som opplever økonomiske problemer som følge av koronasituasjonen,

@@ -1,25 +1,10 @@
 {{ define "main" }}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-10 offset-lg-1">
-            <ol class="breadcrumb a-breadcrumb">
-                {{ template "breadcrumb" dict "page" . "value" (printf "<li class='breadcrumb-item active'><a class='a-link' href='%s'>%s</a></li>" .URL .LinkTitle) }}
-            </ol>
-            <h1 class="a-fontBold ">{{ .Params.title }}</h1>
-            <p class="a-leadText" id="leadText">{{ .Params.description }}</p>
-            {{with .Page.Lastmod}}
-            <div class="a-byline">Sist oppdatert {{ .Format "02.01.2006" }}</div>
-            {{end}}
-            <hr class="mt-2 mb-0 d-none d-lg-block" />
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 col-lg-8 offset-lg-2 a-text epi-wysiwyg my-2">
-            {{ partial "components/toc.html" . }}
-            {{ .Content }}
-            {{ partial "components/didyoufind.html" . }}
-        </div>
-    </div>
+
+<div class="component">
+    {{ partial "components/content-header.html" . }}
 </div>
-</section>
+<div class="component">
+    {{ partial "components/content-body.html" . }}
+</div>
+
 {{ end }}
