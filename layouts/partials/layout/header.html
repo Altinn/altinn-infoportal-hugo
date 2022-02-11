@@ -1,0 +1,11 @@
+{{ partial "layout/navbar.html" . }}
+
+{{ if and (.IsHome) (.Params.jumbotron) }}
+    {{ partial "components/jumbotron.html" . }}
+{{else if (.Params.jumbotron_help) }}
+    {{ partial "components/jumbotron-help.html" . }}
+{{else if (.Params.jumbotron_business) }}
+    {{ partial "components/jumbotron-business.html" . }}
+{{end}}
+
+{{ partial "layout/breadcrumb.html" . }}

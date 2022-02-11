@@ -1,21 +1,12 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 <div class="container" tabindex="-1">
 
-{{if .Site.Home.Content }}
-	{{ $regExpIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}
-	{{ $regExpOut := "<figure><a href=\"$1\"><img src=\"$1\" alt=\"$2\" title=\"$3\" /></a><figcaption><h4>$3</h4></figcaption></figure>" }}
-	{{ $finalContent := .Site.Home.Content | replaceRE $regExpIn $regExpOut | safeHTML }}
-	{{ $finalContent }}
+	{{if .Site.Home.Content }}
+		{{ $regExpIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}
+		{{ $regExpOut := "<figure><a href=\"$1\"><img src=\"$1\" alt=\"$2\" title=\"$3\" /></a><figcaption><h4>$3</h4></figcaption></figure>" }}
+		{{ $finalContent := .Site.Home.Content | replaceRE $regExpIn $regExpOut | safeHTML }}
+		{{ $finalContent }}
+	{{ end }}
+	
+</div>
 {{ end }}
-
-{{ partial "footer.html" . }}
-
-{{define "breadcrumb"}}
-{{if and (.page.Parent) (not .page.Parent.IsHome)}}
-{{$value := (printf "<li class='breadcrumb-item breadcrumb-mobile'><a class='a-link' href='%s'>%s</a></li> %s" .page.Parent.URL .page.Parent.LinkTitle .value)}}
-{{ template "breadcrumb" dict "page" .page.Parent "value" $value }}
-{{else}}
-{{.value|safeHTML}}
-{{end}}
-{{end}}

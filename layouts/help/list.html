@@ -1,5 +1,4 @@
-{{ partial "header.html" . }}
-
+{{ define "main" }}
 {{ if .Params.jumbotron_help }}
 <div class="container">
     <div class="row mt-4 a-dontPrint">
@@ -53,5 +52,4 @@
 <div class="container">
     {{ .Content }}
 </div>
-
-{{ partial "footer.html" . }}
+{{ end }}

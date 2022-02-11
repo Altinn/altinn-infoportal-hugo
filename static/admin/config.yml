@@ -29,12 +29,14 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', i18n: true, required: true }
+      - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
+      - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description" }
+      - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
+      - { label: 'Vis innholdsfortegnelse', name: 'toc', widget: boolean, i18n: true }
+      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: true}
+      # HIDDEN FIELDS
       - { label: 'Last Mod', name: 'lastmod', widget: 'hidden', i18n: true }
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
-      - { label: 'Description', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Show Table of Content', name: 'toc', widget: boolean, i18n: true }
-      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true, required: true}
 
   - name: 'om-altinn'
     publish: false # hides publishing controls
@@ -49,13 +51,17 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-      - { label: 'Link Title', name: 'linktitle', widget: 'string', i18n: true }
-      #- { label: 'Url', name: 'url', widget: 'string', i18n: true }
+      - { label: 'Tittel', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Lenke Tittel', name: 'linktitle', widget: 'string', i18n: true, hint: Tittel for lenke til innhold }
+      - { label: 'Url', name: 'url', widget: 'string', i18n: true, hint: "NB! ingen ÆØÅ e.g: /nb/forste-artikkel" }
+      - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description" }
+      - { label: 'Ingress', name: 'description', widget: 'text', i18n: true }
+      - { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning' }
+      - { label: 'Vis innholdsfortegnelse', name: 'toc', widget: boolean, i18n: true }
+      - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, i18n: true }
+      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true }
+      # HIDDEN FIELDS
+      #- 
       - { label: 'Last Mod', name: 'lastmod', widget: 'hidden', i18n: true }
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
-      - { label: 'Description', name: 'description', widget: 'text', i18n: true }
-      - { label: 'Weight', name: 'weight', widget: 'number', i18n: true }
-      - { label: 'Show Table of Content', name: 'toc', widget: boolean, i18n: true }
-      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
 
