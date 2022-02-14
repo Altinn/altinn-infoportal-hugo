@@ -1,6 +1,7 @@
 CMS.registerEditorComponent({
     id: "exbandlargeid",
     label: "Accordion",
+    collapsed: false,
     fields: [{
             name: "uuid",
             label: "ID",
@@ -13,10 +14,10 @@ CMS.registerEditorComponent({
         {
             name: "body",
             label: "Innhold",
-            widget: "text",
+            widget: "markdown",
         }
     ],
-    pattern: /{{%expandlarge id="(.*?)" header="(.*?)" %}}(.*?){{% \/expandlarge%}}/,
+    pattern: /{{%expandlarge id="(.*?)" header="(.*?)" %}}(.*?){{% \/expandlarge%}}/s,
     fromBlock: function (match) {
         return {
             uuid: match[1],
