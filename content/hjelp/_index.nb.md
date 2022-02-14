@@ -21,7 +21,7 @@ Når du har valgt å representere underenheten vil du finne sykmeldingen under i
 Har du flere spørsmål angående sykmelding kan du lese mer på NAV sine sider. 
 {{% /expandlarge%}}
 
-{{%expandlarge id="motivasjon" header="Hvordan representere andre?" %}}
+{{%expandlarge id="motivasjon1" header="Hvordan representere andre?" %}}
 Klikk på navnet ditt oppe til høyre på siden. Du får da frem en oversikt over hvilke aktører du har tilgang på i Altinn, det kan være andre personer eller foretak og bedrifter.
 
 Underenheter og slettede enheter finner du ved å klikke Vis alle aktører. Her kan du velge å Se alle underenheter eller Se slettede enheter.
