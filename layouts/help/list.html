@@ -56,7 +56,9 @@
         </div>
     </div>
 
-    {{ partial "components/are-you-stuck.html" . }}
+    {{ if .Params.show_ays }}
+        {{ partial "components/are-you-stuck.html" . }}
+    {{ end }}
 
 </div>
 {{ end }}

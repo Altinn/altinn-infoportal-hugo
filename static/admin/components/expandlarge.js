@@ -17,7 +17,7 @@ CMS.registerEditorComponent({
             widget: "markdown",
         }
     ],
-    pattern: /{{%expandlarge id="(.*?)" header="(.*?)" %}}(.*?){{% \/expandlarge%}}/s,
+    pattern: /{{% expandlarge id="(.*?)" header="(.*?)" %}}(.*?){{% \/expandlarge %}}/s,
     fromBlock: function (match) {
         return {
             uuid: match[1],
@@ -26,6 +26,6 @@ CMS.registerEditorComponent({
         }
     },
     toBlock: function (obj) {
-        return `{{%expandlarge id="${obj.uuid}" header="${obj.header}" %}}${obj.body}{{% /expandlarge%}}`;
+        return `{{% expandlarge id="${obj.uuid}" header="${obj.header}" %}}${obj.body}{{% /expandlarge %}}`;
     },
 })

@@ -1,10 +1,13 @@
 ---
 title: Hjelp
-description: Altinn brukerservice hjelper deg med innlogging, navigering, delegering og veien frem til et skjema. Har du spørsmål om utfylling av et skjema må du kontakte etaten som eier det.
+description: Altinn brukerservice hjelper deg med innlogging, navigering,
+  delegering og veien frem til et skjema. Har du spørsmål om utfylling av et
+  skjema må du kontakte etaten som eier det.
 jumbotron_help: true
-cascade: {type: help}
+cascade:
+  type: help
+show_ays: true
 ---
-
 ## Spørsmål du kanskje har
 
 {{% expandlarge id="7b776664-6629-4bcc-ae98-68ed0831d932" header="Sykemelding" %}}Finner du ikke Sykmeldingen? 
@@ -41,11 +44,11 @@ Rollen Hovedadministrator er ikke en nøkkelrolle, og kan derfor ikke arve rolle
 
 {{% expandlarge id="e5225de0-d0b6-4bca-9874-eb68727e20f9" header="Hvordan representerer jeg en underenhet?" %}}Skal du representere en underenhet (bedriftsnummer) må du først klikke på navnet ditt oppe i høyre hjørne og _Vis alle aktører._ Når du haker av for å _Se alle underenheter_ vil du få opp underenheten under det juridiske organisasjonsnummeret.{{% /expandlarge %}}
 
-{{% expandlarge id="695de47e-5a27-4a26-b3ba-14876738966c" header="Fått varsel, men finner ikke noe ny melding" %}}_ Sjekk under \_innboks, arkiv_ eller \_slettede\*
+{{% expandlarge id="695de47e-5a27-4a26-b3ba-14876738966c" header="Fått varsel, men finner ikke noe ny melding" %}} *Sjekk under _innboks, arkiv* eller _slettede*
 
--   Sjekk at du representerer riktig organisasjonsnummer, varselet inneholder som regel informasjon om hvilket organisasjonsnummer det gjelder. [Hvordan representere andre?](https://www.altinn.no/hjelp/innboks/innboks/hvordan-velge-aktorprofil/ "Representere andre") 
+* Sjekk at du representerer riktig organisasjonsnummer, varselet inneholder som regel informasjon om hvilket organisasjonsnummer det gjelder. [Hvordan representere andre?](https://www.altinn.no/hjelp/innboks/innboks/hvordan-velge-aktorprofil/ "Representere andre") 
 
-\\
+
 Finner du fortsatt ikke meldingen? Da kan det tenkes at varselet egentlig er ment for noen andre. Dette kan skje hvis noen har lagt inn feil kontaktinformasjon i Altinn. [Hva brukes din kontaktinformasjon til?](https://www.altinn.no/hjelp/profil/kontaktinformasjon/hva-brukes-kontaktinformasjon-til/ "Hva brukes din kontaktinformasjon til?"){{% /expandlarge %}}
 
 {{% expandlarge id="959018a3-6874-45a2-9b41-55ee89f25d81" header="Finner ikke tilsendt skjema i innboksen" %}}Finner du ikke tilsendt skjema i innboksen bør du:
