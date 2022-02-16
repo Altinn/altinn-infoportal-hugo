@@ -9,24 +9,8 @@
     </div>
 </div>
 {{else}}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-6 offset-lg-3 a-articleSearch">
-            <div class="form-group a-form-group  a-form-group-large">
-                <label class="a-form-label sr-only" for="search">{{T "what-can-we-help-you-with"}}</label>
-                <div class="a-form-group-items input-group">
-                    <input class="form-control a-hasButton" type="text" placeholder="{{T `what-can-we-help-you-with`}}" name="search-input-field" data-val="true" id="search" value="">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="button" name="search-button">
-                            <i class="ai ai-search" aria-hidden="true"></i>
-                            <span class="sr-only">{{T "search"}}</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{ .Scratch.Set "search-placeholder" "what-can-we-help-you-with" }}
+{{ partial "search/search-component.html" . }}
 <section id="content" tabindex="-1">
 <div class="container">
     <div class="row">
