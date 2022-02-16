@@ -28,22 +28,8 @@
           <div class="collapse navbar-toggleable-sm a-globalNav-main" id="exCollapsingNavbar2">
             <ul id="exCollapsingNavbar">
               <li class="d-md-none">
-                <div class="form-group a-form-group">
-                  <label class="a-form-label sr-only" for="text-input-search-12">
-                    {{ T "search-for-content" }}
-                  </label>
-                  <div class="a-form-group-items input-group">
-                    <input type="search" class="form-control a-hasButton" id="text-input-search-12"
-                      name="search-input-field-mob" placeholder="{{ T `search-for-content` }}" data-val="true">
-                    <div class="input-group-append">
-                      <button class="btn btn-secondary" type="button" name="search-button-mob">
-                        <i class="ai ai-search" aria-hidden="true">
-                          <span class="sr-only">{{ T "search" }}</span>
-                        </i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+                {{ partial "search/search-inner.html" . }}
               </li>
               <li class="d-md-none dropdown">
                 <a class="nav-link dropdown-toggle a-languageSwitcher" aria-expanded="false" data-toggle="dropdown"

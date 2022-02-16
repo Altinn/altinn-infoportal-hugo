@@ -1,0 +1,21 @@
+{{/* USAGE
+
+    Add to page:
+    
+    {{ .Scratch.Set "search-placeholder" "i18n translation-key goes here" }}
+    {{ partial "search/search-inner.html" . }}
+
+    18n-keys: 
+    
+    id: search-for-content
+    id: what-can-we-help-you-with
+        
+*/}}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6 offset-lg-3 a-articleSearch">
+            {{ partial "search/search-inner.html" . }}
+        </div>
+    </div>
+</div>
