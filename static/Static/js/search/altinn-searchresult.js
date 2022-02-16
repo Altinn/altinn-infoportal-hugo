@@ -13,7 +13,7 @@ function displayResults(resultList, reqId) {
     if (resultList && resultList.length) {
         let resultListHtml = ''
         resultList.forEach(result => { //TODO: Possible to render the html in a better way?
-            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
+            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('meta_title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
         })
         searchResults.innerHTML = resultListHtml
     } else {
