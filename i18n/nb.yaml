@@ -35,6 +35,12 @@
 # Help
 - id: what-can-we-help-you-with
   translation: Hva kan vi hjelpe deg med?
+- id: are-you-stuck
+  translation: Står du fast?
+- id: write-to-us
+  translation: Skriv til oss
+- id: support-phone
+  translation: Telefonnummer til Altinn brukerstøtte
 
 # News
 - id: news

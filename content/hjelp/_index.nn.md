@@ -7,9 +7,7 @@ cascade:
   type: help
 ---
 
-
 ## Spørsmål du kanskje har
-
 
 {{%expandlarge id="motivasjon" header="Sykemelding" %}}
 Finner du ikke Sykmeldingen? 

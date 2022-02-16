@@ -16,6 +16,37 @@ i18n:
 media_folder: static/img
 public_folder: /img
 collections:
+
+
+# HJELP
+  - name: 'help'
+    publish: true # false hides publishing controls
+    i18n: true
+    create: true
+    label: 'Hjelp'
+    folder: 'content/hjelp'
+    path: '{{slug}}/index'
+
+    media_folder: ''
+    public_folder: ''
+    editor:
+      preview: false
+    nested:
+      depth: 100
+      summary: '{{title}}'
+    fields:
+      - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
+      - { label: 'Url', name: 'url', widget: 'string', i18n: true, hint: "NB! ingen ÆØÅ e.g: /nb/forste-artikkel", required: false }
+      - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description", required: false }
+      #- { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning', required: false }
+      - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
+      - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, i18n: true, required: false, hint: 'Vises på slutten av innholdet' }
+      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
+      # HIDDEN FIELDS
+      - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+
+# NYHETER
   - name: 'nyheter'
     publish: true # false hides publishing controls
     i18n: true
@@ -39,6 +70,7 @@ collections:
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
 
+  # OM ALTINN
   - name: 'om-altinn'
     publish: true # false hides publishing controls
     i18n: true
@@ -65,6 +97,7 @@ collections:
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
 
+  # TEKSTBLOKKER
   - name: 'textblocks'
     i18n: true
     label: 'Tekstblokker'
