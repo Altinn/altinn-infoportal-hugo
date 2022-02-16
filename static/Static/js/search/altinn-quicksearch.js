@@ -9,9 +9,10 @@
         $query = encodeURIComponent($query);
 
         var $searchContext = $("input[name=search-context]").val();
-        var $baseUrl = $isFooter
-            ? $("input[name=search-page-url-footer]").val()
-            : $("input[name=search-page-url-body]").val();
+        // var $baseUrl = $isFooter
+        //     ? $("input[name=search-page-url-footer]").val()
+        //     : $("input[name=search-page-url-body]").val();
+        var $baseUrl = "/sok"
 
         var $url = $baseUrl + "?q=" + $query;
 
