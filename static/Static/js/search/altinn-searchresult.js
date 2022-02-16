@@ -6,15 +6,14 @@ var client = window.ElasticAppSearch.createClient({
     searchKey: "search-r6rtkhg95naeirkv7v3scye6",
     endpointBase: "https://infoportal-search-test.ent.westeurope.azure.elastic-cloud.com",
     engineName: "infoportal-search"
-});
+}); //TODO: These should be set at deploytime to support different environments
 
 function displayResults(resultList, reqId) {
     const searchResults = document.getElementById('results')
     if (resultList && resultList.length) {
-        const dummyDescription = "Missing description in page meta. So just using dummy description, lorem ipsum, foo bar!"
         let resultListHtml = ''
         resultList.forEach(result => {
-            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('title')}</a></h2><p>${dummyDescription}</p></div>`
+            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
         })
         searchResults.innerHTML = resultListHtml
     } else {
