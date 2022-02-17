@@ -1,6 +1,9 @@
 {{ define "main" }}
 <div class="container" tabindex="-1">
 
+	{{ .Scratch.Set "search-placeholder" "search-for-content" }}
+	{{ partial "search/search-component.html" . }}
+
 	{{if .Site.Home.Content }}
 		{{ $regExpIn := "<p><img src=\"([^\"]+)\" alt=\"([^\"]+)\" title=\"([^\"]+)\" /></p>" }}
 		{{ $regExpOut := "<figure><a href=\"$1\"><img src=\"$1\" alt=\"$2\" title=\"$3\" /></a><figcaption><h4>$3</h4></figcaption></figure>" }}

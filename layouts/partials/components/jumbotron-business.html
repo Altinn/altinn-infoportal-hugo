@@ -1,21 +1,6 @@
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-6 offset-lg-3 a-articleSearch">
-            <div class="form-group a-form-group  a-form-group-large">
-                <label class="a-form-label sr-only" for="search">{{ T "search-for-content"}}</label>
-                <div class="a-form-group-items input-group">
-                    <input class="form-control a-hasButton" type="text" placeholder="{{ T `search-for-content`}}" name="search-input-field" data-val="true" id="search" value="">
-                    <div class="input-group-append">
-                        <button class="btn btn-secondary" type="button" name="search-button">
-                            <i class="ai ai-search" aria-hidden="true"></i>
-                            <span class="sr-only">{{ T "search"}}</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{{ .Scratch.Set "search-placeholder" "search-for-content" }}
+{{ partial "search/search-component.html" . }}
+
 <div class="container">
     <div class="row">
         <div class="col-lg-11 offset-lg-1">

@@ -1,6 +1,7 @@
 CMS.registerEditorComponent({
     id: "tblockid",
     label: "Tekstblokk",
+    collapsed: false,
     fields: [{
       name: "tblock",
       label: "Tekstblokk",

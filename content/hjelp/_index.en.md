@@ -1,8 +1,9 @@
 ---
 title: Help
 url: /en/help
-description: "Altinn support will help you with logging in, navigating, delegating and finding the form.
-              If your question concerns what you should enter in the form, please contact the agency that owns the form."
+description: Altinn support will help you with logging in, navigating,
+  delegating and finding the form. If your question concerns what you should
+  enter in the form, please contact the agency that owns the form.
 jumbotron_help: true
 cascade:
   type: help

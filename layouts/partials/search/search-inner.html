@@ -1,0 +1,27 @@
+{{/* USAGE
+
+    Add to page:
+    
+    {{ .Scratch.Set "search-placeholder" "i18n translation-key goes here" }}
+    {{ partial "search/search-inner.html" . }}
+
+    18n-keys: 
+    
+    id: search-for-content
+    id: what-can-we-help-you-with
+        
+*/}}
+
+<div class="form-group a-form-group  a-form-group-large">
+    <label class="a-form-label sr-only" for="search">{{ T (.Scratch.Get "search-placeholder") }}</label>
+    <div class="a-form-group-items input-group">
+        <input class="form-control a-hasButton" type="text" placeholder="{{ T (.Scratch.Get "search-placeholder") }}"
+            name="search-input-field" data-val="true" id="search" value="">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button" name="search-button">
+                <i class="ai ai-search" aria-hidden="true"></i>
+                <span class="sr-only">{{ T "search" }}</span>
+            </button>
+        </div>
+    </div>
+</div>
