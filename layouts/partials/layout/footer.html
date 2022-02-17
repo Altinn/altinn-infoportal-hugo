@@ -3,6 +3,7 @@
         <div class="row a-footer-firstRow">
             <div class="col-md-4 d-none d-md-block">
                 {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+                {{ .Scratch.Set "search-id" "search-footer" }}
                 {{ partial "search/search-inner.html" . }}
             </div>
             <div class="col-md-8">

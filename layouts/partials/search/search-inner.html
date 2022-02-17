@@ -2,6 +2,7 @@
 
     Add to page:
     
+    {{ .Scratch.Set "search-id" "search-fields-id-postfix-goes-here"}}
     {{ .Scratch.Set "search-placeholder" "i18n translation-key goes here" }}
     {{ partial "search/search-inner.html" . }}
 
@@ -16,9 +17,9 @@
     <label class="a-form-label sr-only" for="search">{{ T (.Scratch.Get "search-placeholder") }}</label>
     <div class="a-form-group-items input-group">
         <input class="form-control a-hasButton" type="text" placeholder="{{ T (.Scratch.Get "search-placeholder") }}"
-            name="search-input-field" data-val="true" id="search" value="">
+            name="search-input-field" data-val="true" id="input-{{ (.Scratch.Get "search-id") }}" value="">
         <div class="input-group-append">
-            <button class="btn btn-secondary" type="button" name="search-button">
+            <button class="btn btn-secondary" type="button" name="search-button" id="{{ (.Scratch.Get "search-id") }}">
                 <i class="ai ai-search" aria-hidden="true"></i>
                 <span class="sr-only">{{ T "search" }}</span>
             </button>

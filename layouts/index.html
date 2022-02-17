@@ -2,6 +2,7 @@
 <div class="container" tabindex="-1">
 
 	{{ .Scratch.Set "search-placeholder" "search-for-content" }}
+	{{ .Scratch.Set "search-id" "search-main" }}
 	{{ partial "search/search-component.html" . }}
 
 	{{if .Site.Home.Content }}

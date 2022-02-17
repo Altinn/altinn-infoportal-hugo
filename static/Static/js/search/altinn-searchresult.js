@@ -13,7 +13,7 @@ function displayResults(resultList, reqId) {
     if (resultList && resultList.length) {
         let resultListHtml = ''
         resultList.forEach(result => { //TODO: Possible to render the html in a better way?
-            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('meta_title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
+            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
         })
         searchResults.innerHTML = resultListHtml
     } else {
@@ -22,7 +22,7 @@ function displayResults(resultList, reqId) {
 }
 
 if (query) {
-    document.getElementById('search').setAttribute('value', query)
+    document.getElementById('input-search-main').setAttribute('value', query)
     var options = {
         search_fields: { title: {} },
         result_fields: { id: { raw: {} }, title: { raw: {} }, url: { raw: {} }, meta_keywords: { raw: {} } },
@@ -39,7 +39,7 @@ if (query) {
         });
 }
 
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function (e) {
     const el = e.target;
     if (!el.classList.contains("track-click")) return;
     console.log({
@@ -47,14 +47,14 @@ document.addEventListener("click", function(e) {
         documentId: el.getAttribute("data-doc-id"),
         requestId: el.getAttribute("data-req-id"),
         tags: [el.getAttribute("data-tag")]
-      });
-    client.click({
-      query: el.getAttribute("data-query"),
-      documentId: el.getAttribute("data-doc-id"),
-      requestId: el.getAttribute("data-req-id"),
-      tags: ["altinn-search"]
-    })
-    .catch(error => {
-        console.log(`error registering click: ${error}`)
     });
-  });
+    client.click({
+        query: el.getAttribute("data-query"),
+        documentId: el.getAttribute("data-doc-id"),
+        requestId: el.getAttribute("data-req-id"),
+        tags: ["infoportal-search"]
+    })
+        .catch(error => {
+            console.log(`error registering click: ${error}`)
+        });
+});
