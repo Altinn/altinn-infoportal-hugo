@@ -24,8 +24,12 @@
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<meta name="title" content="{{ .Title }}" />
+<meta name="description" content="{{ .Description }}" />
+
 <!-- Facebook tags -->
 <meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ .Description }}" />
 <meta property="og:image" content="https://www.altinn.no/Static/favicon/android-chrome-192x192.png" />
 <meta property="og:url" content="https://www.altinn.no/" />
 <meta property="ot:site_name" content="Altinn" />
@@ -33,6 +37,7 @@
 
 <!-- Twitter tags -->
 <meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ .Description }}" />
 <meta name="twitter:image" content="https://www.altinn.no/Static/favicon/android-chrome-192x192.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@Altinn" />

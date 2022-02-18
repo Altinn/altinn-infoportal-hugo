@@ -1,5 +1,6 @@
 {{ define "main" }}
 {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+{{ .Scratch.Set "search-id" "search-main" }}
 {{ partial "search/search-component.html" . }}
 
 <div class="container">

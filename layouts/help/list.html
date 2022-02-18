@@ -10,6 +10,7 @@
 </div>
 {{else}}
 {{ .Scratch.Set "search-placeholder" "what-can-we-help-you-with" }}
+{{ .Scratch.Set "search-id" "search-main" }}
 {{ partial "search/search-component.html" . }}
 <section id="content" tabindex="-1">
 <div class="container">

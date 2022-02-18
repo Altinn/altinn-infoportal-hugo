@@ -29,6 +29,7 @@
             <ul id="exCollapsingNavbar">
               <li class="d-md-none">
                 {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+                {{ .Scratch.Set "search-id" "search-navbar" }}
                 {{ partial "search/search-inner.html" . }}
               </li>
               <li class="d-md-none dropdown">

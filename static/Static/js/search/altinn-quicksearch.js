@@ -9,9 +9,10 @@
         $query = encodeURIComponent($query);
 
         var $searchContext = $("input[name=search-context]").val();
-        var $baseUrl = $isFooter
-            ? $("input[name=search-page-url-footer]").val()
-            : $("input[name=search-page-url-body]").val();
+        // var $baseUrl = $isFooter
+        //     ? $("input[name=search-page-url-footer]").val()
+        //     : $("input[name=search-page-url-body]").val();
+        var $baseUrl = "/sok"
 
         var $url = $baseUrl + "?q=" + $query;
 
@@ -35,18 +36,9 @@
     };
 
     $("input[name=search-input-field]").keypress($checkKeyPressForSearch);
-    $("input[name=search-input-field-mob]").keypress($checkKeyPressForSearch);
-    $("input[name=search-input-field-footer]").keypress($checkKeyPressForSearchFooter);
 
     $("button[name=search-button]").click(function () {
-        $search($("input[name=search-input-field]").val(), false);
-    });
-
-    $("button[name=search-button-mob]").click(function () {
-        $search($("input[name=search-input-field-mob]").val(), false);
-    });
-
-    $("button[name=search-button-footer]").click(function () {
-        $search($("input[name=search-input-field-footer]").val(), true);
+        var ID = $(this).attr('id');
+        $search($("input[id=input-"+ID+"]").val(), false);
     });
 });
