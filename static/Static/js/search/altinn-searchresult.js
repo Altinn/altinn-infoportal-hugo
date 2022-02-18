@@ -13,7 +13,13 @@ function displayResults(resultList, reqId) {
     if (resultList && resultList.length) {
         let resultListHtml = ''
         resultList.forEach(result => { //TODO: Possible to render the html in a better way?
-            resultListHtml += `<div class="a-linkArticle a-borderBottomDark"><h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${result.getRaw('title')}</a></h2><p>${result.getRaw('meta_description')}</p></div>`
+            description = (typeof result.getRaw('meta_description') !== "undefined" ) ? result.getRaw('meta_description') : result.getRaw('headings')
+            title = (typeof result.getRaw('altinn_title') !== "undefined" ) ? result.getRaw('altinn_title') : result.getRaw('title')
+            resultListHtml += `
+            <div class="a-linkArticle a-borderBottomDark">
+              <h2><a href="${result.getRaw('url')}" class="a-link-title track-click" data-query="${query}" data-doc-id="${result.getRaw('id')}" data-req-id="${reqId}" data-tag="${result.getRaw('meta_keywords')}">${title}</a></h2>
+              <p>${description}</p>
+            </div>`
         })
         searchResults.innerHTML = resultListHtml
     } else {
@@ -24,8 +30,8 @@ function displayResults(resultList, reqId) {
 if (query) {
     document.getElementById('input-search-main').setAttribute('value', query)
     var options = {
-        search_fields: { title: {}, meta_description: {}, meta_keywords: {}, body_content: {} },
-        result_fields: { id: { raw: {} }, title: { raw: {} }, url: { raw: {} }, meta_keywords: { raw: {} }, meta_description: { raw: {} }},
+        search_fields: { altinn_title: {}, meta_description: {}, meta_keywords: {}, body_content: {} },
+        result_fields: { id: { raw: {} }, title: { raw: {} }, altinn_title: { raw: {} }, url: { raw: {} }, meta_keywords: { raw: {} }, meta_description: { raw: {} }, headings: { raw: {} }},
         analytics: {
             tags: ["infoportal-search"]
         }
