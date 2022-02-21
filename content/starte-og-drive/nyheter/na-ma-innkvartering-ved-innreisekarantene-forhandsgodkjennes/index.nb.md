@@ -3,6 +3,7 @@ title: Nå må innkvartering ved innreisekarantene forhåndsgodkjennes
 description: Ved innreise til Norge er det krav om karantene for utenlandske arbeidstakere, og som hovedregel skal karantenen foregå på karantenehotell.
              Arbeidsgivere som selv ønsker å tilby innkvartering for innreisekarantene, må nå få lokalene forhåndsgodkjent av Arbeidstilsynet.
 lastmod: 2021-02-22
+promote: false
 ---
 
 Arbeidstilsynets høyeste prioritet er nå å begrense koronasmitte i arbeidslivet.

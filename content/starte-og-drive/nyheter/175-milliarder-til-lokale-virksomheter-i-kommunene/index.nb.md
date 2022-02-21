@@ -2,6 +2,7 @@
 title: 1,75 milliarder til lokale virksomheter i kommunene
 description: Stortinget bevilger 1,75 milliarder kroner til kommunene, slik at de kan kompensere lokale virksomheter som er rammet av nasjonale eller lokale smitteverntiltak. Nå er fordelingen til kommunene klar.
 lastmod: 2021-02-26
+promote: false
 ---
 
 – Mange virksomheter rundt omkring i landet er svært hardt rammet av de skjerpede smitteverntiltakene som ble innført på nyåret.

@@ -2,6 +2,7 @@
 title: Godkjenning av innkvartering for arbeidstakere i innreisekarantene
 description: Innkvarteringen som arbeids- og oppdragsgivere stiller til disposisjon for utenlandske arbeidstakere i innreisekarantene, må forhåndsgodkjennes av Arbeidstilsynet.
 lastmod: 2021-02-19
+promote: false
 ---
 
 *Det vil bli mulig å søke om godkjenning fra mandag 22. februar 2021 kl. 12.00.*

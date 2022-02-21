@@ -5,5 +5,6 @@ cascade:
   type: news
   newscategory: business
   didyoufind: true
+promote: false
 ---
 

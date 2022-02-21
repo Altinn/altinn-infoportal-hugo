@@ -21,8 +21,8 @@
                     <div class="a-list-container pb-3">
                         <ul class="a-list a-list-large-forMD a-list-noIcon">
 
-                            {{ range (where .Pages "Type" "!=" "news") }}
-           
+                            {{ range .Pages }}
+                            {{ if eq .Params.promote true }}
                             <li class="a-dotted a-clickable a-list-hasRowLink">
                                 <a href="{{.Permalink}}" class="a-list-rowLink">
                                     <div class="row">
@@ -33,7 +33,7 @@
                                 </a>
                             </li>
                             {{ end }}
-
+                            {{ end }}
                         </ul>
                     </div>
                     <a href="/en/start-and-run-business/koronaviruset-og-din-virksomhet/"
