@@ -1,13 +1,65 @@
 {{ define "main" }}
 
-<div class="container">
-    <div class="row mt-4 a-dontPrint">
-        {{ $paginator := .Paginate (where .Pages "Type" "help") }}
-        {{ range $index, $page := $paginator.Pages }}
-        {{ .Render "li" }}
-        {{ end }}
+{{ .Scratch.Set "search-placeholder" "search-for-content" }}
+{{ .Scratch.Set "search-id" "search-main" }}
+{{ partial "search/search-component.html" . }}
+
+<section id="content" tabindex="-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-10 offset-lg-1">
+                <div class="pb-4">
+                    <ol class="breadcrumb a-breadcrumb">
+                        <li class="breadcrumb-item ">
+                            <a class="a-link" href="{{.Parent.Permalink}}">
+                                <span class="a-breadcrumb-text">
+                                    {{.Parent.Title}}
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                    <h1 class="a-fontBold a-pageTitle ">
+                        {{.Title}}
+                    </h1>
+                    <p class="a-leadText " id="leadText"></p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<section id="content" tabindex="-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-10 offset-lg-1 pb-3">
+                {{ $paginator := .Paginate (where .Pages "Type" "start-run-business") }}
+                {{ range $index, $page := $paginator.Pages }}
+                <h2 class="a-h3">
+                    {{.Title}}
+                </h2>
+                {{ if isset .Params "description"}}
+                    <p>{{.Params.description}}</p>
+                {{end}}
+                <div class="a-list-container a-list-2col clearfix mb-5">
+                    <ul class="a-list a-list-noIcon  a-list-2col">
+                        {{ range $index_child, $child := $page.Pages }}
+                        <li class="a-dotted a-clickable a-list-hasRowLink">
+                            <a href="{{.Permalink}}" class="a-list-rowLink">
+                                <div class="row">
+                                    <div class="col">
+                                        {{.Title}}
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="container">
     {{ .Content }}
