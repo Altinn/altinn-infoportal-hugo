@@ -1,6 +1,5 @@
 ---
 title: Starte bedrift
-content_type: TEMA-SIDE
 need_help: false
 promote: true
 page: false

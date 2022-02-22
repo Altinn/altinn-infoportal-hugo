@@ -24,7 +24,7 @@ collections:
     create: true
     label: 'Starte og drive'
     folder: 'content/starte-og-drive'
-    path: '{{slug}}/index'
+    path: '/{{slug}}/index'
     media_folder: ''
     public_folder: ''
     editor:
