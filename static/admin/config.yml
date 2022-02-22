@@ -40,6 +40,7 @@ collections:
       #- { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning', required: false }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: false }
       - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Vises på slutten av innholdet' }
+      - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, i18n: true,required: false }
       - { label: 'Promoter innhold"', name: 'promote', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Innhold vises på landingsside (starte og drive)' }
       - { label: 'Layout "Liste"', name: 'list_view', widget: boolean, default: true, i18n: duplicate, required: false, hint: 'Innhold vises med liste visning av underssider' }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
