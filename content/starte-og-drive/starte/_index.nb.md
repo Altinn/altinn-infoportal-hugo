@@ -6,5 +6,5 @@ page: false
 weight: 1
 show_ays: false
 description: Test
-map: true
+list_view: true
 ---

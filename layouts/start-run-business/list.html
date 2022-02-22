@@ -1,14 +1,12 @@
 {{ define "main" }}
-    {{ if .Params.map }}
+    {{ if .Params.list_view }}
         {{ .Scratch.Set "search-placeholder" "search-for-content" }}
         {{ .Scratch.Set "search-id" "search-main" }}
         {{ partial "search/search-component.html" . }}
         {{ partial "components/list-view.html" . }}
         {{ partial "components/content-body.html" . }}
     {{ else }}
-            {{ if .Params.page }}
-            {{ partial "components/content-header.html" . }}
-            {{end}}
-            {{ partial "components/content-body.html" . }}
+        {{ partial "components/content-header.html" . }}
+        {{ partial "components/content-body.html" . }}
     {{ end }}
 {{ end }}
