@@ -1,3 +1,7 @@
+{{ if and (.IsHome) (.Params.jumbotron) }}
+{{else if (.Params.jumbotron_help) }}
+{{else if (.Params.jumbotron_business) }}
+{{else}}
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-10 offset-lg-1">
@@ -13,3 +17,4 @@
         </div>
     </div>
 </div>
+{{end}}

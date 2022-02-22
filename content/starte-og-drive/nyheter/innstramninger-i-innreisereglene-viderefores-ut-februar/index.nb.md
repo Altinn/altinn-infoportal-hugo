@@ -4,6 +4,7 @@ linktitle: Innstramninger videreføres
 description: Regjeringen viderefører innstramningene i innreisereglene som ble innført 29. januar, med noen mindre tilpasninger.
              Samtidig arbeider regjeringen videre med sikte på å kunne åpne mer opp, samtidig som unntakene til karantenehotell og kontrollen strammes inn.
 lastmod: 2021-02-11
+promote: false
 ---
 
 – Smittesituasjonen i Norge og særlig ellers i Europa tilsier at vi dessverre fortsatt må begrense antallet som reiser hit så mye som vi kan.

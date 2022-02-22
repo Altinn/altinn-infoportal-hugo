@@ -2,6 +2,7 @@
 title: Vil lette tilgangen på sesongarbeidere
 description: Regjeringen vil gjøre det lettere å kombinere dagpenger og sesongarbeid i fiskeindustrien og landbruket.
 lastmod: 2021-02-11
+promote: false
 ---
 
 – Koronaepidemien har gjort det vanskeligere for sjømatindustrien å få tak i utenlandsk arbeidskraft.

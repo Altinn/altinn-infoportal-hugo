@@ -1,16 +1,12 @@
 {{ define "main" }}
-
-<div class="container">
-    <div class="row mt-4 a-dontPrint">
-        {{ $paginator := .Paginate (where .Pages "Type" "help") }}
-        {{ range $index, $page := $paginator.Pages }}
-        {{ .Render "li" }}
-        {{ end }}
-    </div>
-</div>
-
-<div class="container">
-    {{ .Content }}
-</div>
-
+    {{ if .Params.list_view }}
+        {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+        {{ .Scratch.Set "search-id" "search-main" }}
+        {{ partial "search/search-component.html" . }}
+        {{ partial "components/list-view.html" . }}
+        {{ partial "components/content-body.html" . }}
+    {{ else }}
+        {{ partial "components/content-header.html" . }}
+        {{ partial "components/content-body.html" . }}
+    {{ end }}
 {{ end }}

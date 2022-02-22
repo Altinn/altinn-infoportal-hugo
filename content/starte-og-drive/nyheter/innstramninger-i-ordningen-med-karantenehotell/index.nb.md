@@ -3,6 +3,7 @@ title: Innstramninger i ordningen med karantenehotell
 linktitle: Innstramninger karantenehotell
 description: Det er innført tre viktige endringer i ordningen med karantenehotell; karantenehotell på første ankomststed, registreringsplikt på hotellet og kontroll på hotellet.
 lastmod: 2021-02-25
+promote: false
 ---
 
 Bakgrunnen er et sterkere smittetrykk i utlandet og mer smittsomme virusvarianter på kontinentet.
