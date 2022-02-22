@@ -5,6 +5,6 @@ cascade:
   type: news
   newscategory: business
   didyoufind: true
+content_type: TEMA-SIDE
 promote: false
 ---
-

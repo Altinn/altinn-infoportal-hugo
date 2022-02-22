@@ -1,6 +1,7 @@
 ---
 title: Eksport og import
-description:
+description: null
 weight: 7
+content_type: TEMA-SIDE
 promote: true
 ---

@@ -1,6 +1,7 @@
 ---
 title: Regnskap og revisjon
-description:
+description: null
 weight: 4
+content_type: TEMA-SIDE
 promote: true
 ---

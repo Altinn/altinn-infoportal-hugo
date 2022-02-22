@@ -4,6 +4,6 @@ url: /en/start-and-run-business
 jumbotron_business: true
 cascade:
   type: start-run-business
+content_type: TEMA-SIDE
+need_help: true
 ---
-
-{{<latest-news count="4" newscategory="business">}}

@@ -5,25 +5,24 @@ CMS.registerEditorComponent({
             name: "count",
             label: "Vis antall",
             widget: "number",
-            default: 3
+            default: 5
         },
         {
             name: "newscategory",
             label: "Kategori",
-            widget: "string",
-            default: "altinn"
+            widget: "select", 
+            options: ["altinn", "business"],
+            multiple: false,
         }
     ],
-    pattern: /{{< latest-news (?<count>[0-9]+)\s{0,}(?<newscategory>[a-zA-Z0-9]+)?\s+>}}/,
-    fromBlock: function (obj) {
+    pattern: /{{<latest-news count="(.*?)" newscategory="(.*?)">}}/s,
+    fromBlock: function (match) {
         return {
             count: match[1],
             newscategory: match[2]
         };
     },
     toBlock: function (obj) {
-        return `{{< latest-news ${obj.count} ${
-        obj.newscategory 
-        }>}}`;
+        return `{{<latest-news count="${obj.count}" newscategory="${obj.newscategory}">}}`;
     }
 });

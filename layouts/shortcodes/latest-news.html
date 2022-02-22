@@ -2,8 +2,7 @@
     <div class="col-lg-8 offset-lg-2 ">
         <section class="a-articleList ">
             <h2 class="pb-2">{{ T "latest-news"}}</h2>
-
-            {{ range first (.Get "count" | default 5) (where .Site.RegularPages "Params.newscategory" (.Get "newscategory" | default "altinn")) }}
+            {{ range first (.Get "count" | default 5) (where .Site.RegularPages "Params.newscategory" ( .Get "newscategory" | default "altinn")) }}
                 <article class="a-linkArticle">
                     <h3><a href="{{.URL}}" class="a-link-title">{{.Title}}</a></h3>
                     <p class="a-js-truncate-2">{{.Description}}</p>

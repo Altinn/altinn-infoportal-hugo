@@ -1,6 +1,7 @@
 ---
 title: Avvikling, sletting og konkurs
-description:
+description: null
 weight: 8
+content_type: TEMA-SIDE
 promote: true
 ---

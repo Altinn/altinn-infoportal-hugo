@@ -1,6 +1,8 @@
 ---
 title: Drive bedrift
-description:
+description: test
 weight: 2
+content_type: TEMA-SIDE
+need_help: false
 promote: true
 ---

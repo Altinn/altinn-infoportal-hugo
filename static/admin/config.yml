@@ -36,10 +36,13 @@ collections:
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Url', name: 'url', widget: 'string', i18n: true, hint: "NB! ingen ÆØÅ e.g: /nb/forste-artikkel", required: false }
       - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description", required: false }
+      - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       #- { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning', required: false }
-      - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, i18n: true, required: false, hint: 'Vises på slutten av innholdet' }
-      - { label: 'Promoter innhold"', name: 'promote', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Vises innhold på fremside (starte og drive)' }
+      - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: false }
+      - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Vises på slutten av innholdet' }
+      - { label: 'Promoter innhold"', name: 'promote', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Innhold vises på landingsside (starte og drive)' }
+      - { label: 'Layout: "Artikkel"', name: 'page', widget: boolean, default: true, i18n: duplicate, required: false, hint: 'Innholdet vises som Artikkel' }
+      - { label: 'Layout "Tema"', name: 'map', widget: boolean, default: true, i18n: duplicate, required: false, hint: 'Innhold vises som Liste med alle underssider' }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
