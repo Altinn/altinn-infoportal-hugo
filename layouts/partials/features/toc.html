@@ -1,0 +1,7 @@
+{{ range .Params.features }}  
+    {{ if eq .toc true }}
+        <h2>{{ T "on-this-page" }}</h2>
+        {{ .TableOfContents }}
+        <br>
+    {{ end }}
+{{ end }}

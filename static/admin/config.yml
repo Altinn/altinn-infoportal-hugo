@@ -33,20 +33,31 @@ collections:
       depth: 100
       summary: '{{title}}'
     fields:
+      # CONTENT
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Url', name: 'url', widget: 'string', i18n: true, hint: "NB! ingen ÆØÅ e.g: /nb/forste-artikkel", required: false }
       - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description", required: false }
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
-      #- { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning', required: false }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: false }
-      - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Vises på slutten av innholdet' }
-      - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, i18n: true,required: false }
-      - { label: 'Promoter innhold"', name: 'promote', widget: boolean, default: false, i18n: duplicate, required: false, hint: 'Innhold vises på landingsside (starte og drive)' }
-      - { label: 'Layout "Liste"', name: 'list_view', widget: boolean, default: true, i18n: duplicate, required: false, hint: 'Innhold vises med liste visning av underssider' }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
+      # SETTINGS FIELDS
+      - label: "Instillinger"
+        name: "features"
+        widget: "list"
+        i18n: true
+        summary: 'Instillinger'
+        min: 1
+        max: 1
+        fields:
+          - { label: 'Vis "Innholdsfortegnelse"', name: 'toc', widget: boolean, default: false, required: false, hint: 'Vises på starten av innholdet' } 
+          - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Promoter innhold"', name: 'promote', widget: boolean, default: false, required: false, hint: 'Innhold vises på landingsside (starte og drive)' }
+          - { label: 'Layout "Liste"', name: 'list_view', widget: boolean, default: false, required: false, hint: 'Innhold vises med liste visning av underssider' }
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
-    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+    meta: { path: { widget: parent, label: 'Path', index_file: '_index' } }
 
 # HJELP
   - name: 'help'
@@ -65,16 +76,29 @@ collections:
       depth: 100
       summary: '{{title}}'
     fields:
+      # CONTENT
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Url', name: 'url', widget: 'string', i18n: true, hint: "NB! ingen ÆØÅ e.g: /nb/forste-artikkel", required: false }
       - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description", required: false }
       #- { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning', required: false }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, i18n: true, required: false, hint: 'Vises på slutten av innholdet' }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
+      # SETTINGS FIELDS
+      - label: "Instillinger"
+        name: "features"
+        widget: "list"
+        i18n: true
+        summary: 'Instillinger'
+        min: 1
+        max: 1
+        fields:
+          - { label: 'Vis "Innholdsfortegnelse"', name: 'toc', widget: boolean, default: false, required: false, hint: 'Vises på starten av innholdet' }  
+          - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, required: false, hint: 'Vises på slutten av innholdet' }
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
-    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+    meta: { path: { widget: parent, label: 'Path', index_file: '_index' } }
 
 # NYHETER
   - name: 'nyheter'
@@ -95,8 +119,20 @@ collections:
       - { label: 'SEO', name: 'seo-description', widget: 'string', i18n: true, hint: "Meta - description", required: false }
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Vis innholdsfortegnelse', name: 'toc', widget: boolean, i18n: true, required: false }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: true}
+      # SETTINGS FIELDS
+      - label: "Instillinger"
+        name: "features"
+        widget: "list"
+        i18n: true
+        summary: 'Instillinger'
+        min: 1
+        max: 1
+        fields:
+          - { label: 'Vis "Innholdsfortegnelse"', name: 'toc', widget: boolean, default: false, required: false, hint: 'Vises på starten av innholdet' }  
+          - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, required: false, hint: 'Vises på slutten av innholdet' }
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
 
@@ -121,9 +157,20 @@ collections:
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true }
       - { label: 'Prioritering', name: 'weight', widget: 'number', i18n: true, hint: 'Prioritering på utlistning' }
-      - { label: 'Vis innholdsfortegnelse', name: 'toc', widget: boolean, i18n: true, required: false }
-      - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, i18n: true,required: false }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true }
+      # SETTINGS FIELDS
+      - label: "Instillinger"
+        name: "features"
+        widget: "list"
+        i18n: true
+        summary: 'Instillinger'
+        min: 1
+        max: 1
+        fields:
+          - { label: 'Vis "Innholdsfortegnelse"', name: 'toc', widget: boolean, default: false, required: false, hint: 'Vises på starten av innholdet' }  
+          - { label: 'Vis "Trenger du hjelp?"', name: 'need_help', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Står du fast?"', name: 'show_ays', widget: boolean, default: false, required: false, hint: 'Vises på slutten av innholdet' }
+          - { label: 'Vis "Fant du de du lette etter?"', name: 'didyoufind', widget: boolean, required: false, hint: 'Vises på slutten av innholdet' }
       # HIDDEN FIELDS
       - { label: 'Allow CMS Edit', name: 'cmsedit', widget: 'hidden', i18n: true, default: true }
 

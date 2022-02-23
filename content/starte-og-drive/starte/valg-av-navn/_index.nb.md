@@ -4,10 +4,13 @@ description: Et godt foretaksnavn kan bidra til at virksomheten din blir lagt
   merke til. Navnet kan være avgjørende for at kunder og andre husker deg og
   forstår hva du driver med.
 weight: 3
-content_type: ARTIKKEL
 lastmod: 2022-02-23
-promote: false
-page: true
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    promote: false
+    list_view: false
 ---
 
 Noen mener de beste navnene er de som beskriver det du holder på med, mens andre foretrekker mer abstrakte navn. Mange store virksomheter bruker abstrakte navn (IKEA, Apple, Rema 1000), mens mindre virksomheter med en tydeligere geografisk og bransjemessig profil, ofte velger et mer beskrivende navn.

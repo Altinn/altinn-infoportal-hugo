@@ -6,9 +6,12 @@ description: Det finnes ingen lov som regulerer hvordan du skal organisere og
   enkeltpersonforetakets økonomi og din private økonomi.
 weight: 2
 lastmod: 2022-02-22
-need_help: true
-promote: false
-page: true
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    promote: false
+    list_view: false
 ---
 
 Vellykket og ryddig drift forutsetter god økonomistyring, og det er viktig at du skiller mellom foretakets økonomi og privatøkonomien, som for eksempel at du har egen konto hvor alle transaksjoner som omhandler enkeltpersonforetaket gjøres. Når du driver enkeltpersonforetak har du normalt en del rapporteringsplikter til myndighetene, slik som for eksempel skattemelding, mva-melding og A-melding, hvis du har ansatte.

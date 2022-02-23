@@ -6,6 +6,11 @@ description: Vi får meldinger fra brukere som har mottatt e-poster fra
   e-posten.
 cmsedit: true
 didyoufind: false
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    didyoufind: false
 ---
 {{< tblock uuid="3cfd563d-5f1f-49f6-977e-bdb85b7fa76f" >}}
 

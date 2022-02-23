@@ -7,6 +7,12 @@ description: Kunder og andre forventer å finne deg og virksomheten din på
   må skaffe seg et domenenavn som de bruker til nettsted og e-post. I tillegg må
   du sørge for konto i ulike sosiale medier.
 page: true
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    promote: false
+    list_view: false
 ---
 
 Domenenavnet kan være foretaksnavnet, markedsføringsnavnet, ditt eget navn eller et annet navn eller uttrykk. Du velger det du vil bli assosiert med og husket som. Du kan stort sett velge det domenenavnet du ønsker, men du må passe på at navnet ikke bryter med andres rettigheter til varemerker, foretaksnavn eller andre navnerettigheter.

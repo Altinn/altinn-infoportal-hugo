@@ -1,10 +1,11 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-lg-8 offset-lg-2 a-text epi-wysiwyg my-2">
-            {{ partial "components/toc.html" . }}
+            {{ partial "features/toc.html" . }}
             {{ .Content }}
-            {{ partial "components/didyoufind.html" . }}
-            {{ partial "components/need-help.html" . }}
+            {{ partial "features/didyoufind.html" . }}
+            {{ partial "features/need-help.html" . }}
+            {{ partial "features/are-you-stuck.html" . }}
         </div>
     </div>
 </div>

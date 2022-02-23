@@ -2,7 +2,12 @@
 title: Drift av aksjeselskap
 description: Når du driver et aksjeselskap er det en rekke formaliteter som du må forholde deg til. Krav til organisering fremkommer av aksjeloven og det er de samme kravene som stilles om selskapet er lite eller stort. 
 weight: 1
-promote: false
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    promote: false
+    list_view: false
 ---
 
 Organisering av aksjeselskap

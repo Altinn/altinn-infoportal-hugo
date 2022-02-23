@@ -1,12 +1,16 @@
 {{ define "main" }}
-    {{ if .Params.list_view }}
-        {{ .Scratch.Set "search-placeholder" "search-for-content" }}
-        {{ .Scratch.Set "search-id" "search-main" }}
-        {{ partial "search/search-component.html" . }}
-        {{ partial "components/list-view.html" . }}
-        {{ partial "components/content-body.html" . }}
-    {{ else }}
-        {{ partial "components/content-header.html" . }}
-        {{ partial "components/content-body.html" . }}
+    {{ $context := . }}
+    {{ range .Params.features }}  
+        {{ if eq .list_view true }}
+            {{ .Scratch.Set "search-placeholder" "search-for-content" }}
+            {{ .Scratch.Set "search-id" "search-main" }}
+            {{ partial "search/search-component.html" $context }}
+            {{ partial "components/list-view.html" $context }}
+            {{ partial "components/content-body.html" $context }}
+        {{ else }}
+            {{ partial "components/content-header.html" $context }}
+            {{ partial "components/content-body.html" $context }}
+        {{ end }}
     {{ end }}
+    
 {{ end }}

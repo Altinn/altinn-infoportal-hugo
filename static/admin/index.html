@@ -14,6 +14,11 @@
   <script type="text/javascript">
     CMS.registerWidget('uuid', uuidWidget.UuidControl, uuidWidget.UuidPreview)
   </script>
+  <script src="https://unpkg.com/@netlify/netlify-cms-widget-parent@^1.0.0/dist/netlify-cms-widget-parent.js"></script>
+  <script>
+    const parentWidget = window.NetlifyCmsWidgetParent;
+    CMS.registerWidget('parent', parentWidget.control, parentWidget.preview);
+  </script>
   
   <!-- Components-->
   <script src="components/latest-news.js"></script>

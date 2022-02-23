@@ -1,8 +1,10 @@
 ---
 title: Arbeidsforhold
-description: TEST
+description: null
 weight: 6
-label: TEST
-content_type: ARTIKKEL
-promote: false
+lastmod: 2022-02-23
+features:
+  - need_help: false
+    promote: true
+    list_view: true
 ---
