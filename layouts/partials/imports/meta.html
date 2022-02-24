@@ -2,6 +2,10 @@
 <meta name="viewport" content="width=device-width" />
 <meta http-equiv="refresh" content="1800" />
 
+<meta name="altinn_title" class="elastic" content="{{ .Title }}" />
+<meta name="description" content="{{ .Params.seo_description }}" />
+<meta name="keywords" content="{{ .Params.seo_keywords }}" />
+
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="57x57" href="/Static/favicon/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/Static/favicon/apple-touch-icon-60x60.png">
@@ -24,12 +28,9 @@
 <meta name="msapplication-TileImage" content="/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-<meta name="altinn_title" class="elastic" content="{{ .Title }}" />
-<meta name="description" content="{{ .Description }}" />
-
 <!-- Facebook tags -->
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ .Params.seo_description }}" />
 <meta property="og:image" content="https://www.altinn.no/Static/favicon/android-chrome-192x192.png" />
 <meta property="og:url" content="https://www.altinn.no/" />
 <meta property="ot:site_name" content="Altinn" />
@@ -37,7 +38,7 @@
 
 <!-- Twitter tags -->
 <meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:description" content="{{ .Description }}" />
+<meta name="twitter:description" content="{{ .Params.seo_description }}" />
 <meta name="twitter:image" content="https://www.altinn.no/Static/favicon/android-chrome-192x192.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@Altinn" />
