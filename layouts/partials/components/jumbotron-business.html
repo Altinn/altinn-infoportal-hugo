@@ -20,18 +20,23 @@
                         <ul class="a-list a-list-large-forMD a-list-noIcon">
 
                             {{ range .Pages }}
-                            {{ if eq .Params.promote true }}
-                            <li class="a-dotted a-clickable a-list-hasRowLink">
-                                <a href="{{.Permalink}}" class="a-list-rowLink">
-                                    <div class="row">
-                                        <div class="col">
-                                            {{.Title}}
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                                {{ $title := .Title }}
+                                {{ $permalink := .Permalink }}
+                                {{ range .Params.features }}
+                                    {{ if eq .promote true }}
+                                    <li class="a-dotted a-clickable a-list-hasRowLink">
+                                        <a href="{{$permalink}}" class="a-list-rowLink">
+                                            <div class="row">
+                                                <div class="col">
+                                                    {{$title}}
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    {{ end }}
+                                {{ end }}
                             {{ end }}
-                            {{ end }}
+
                         </ul>
                     </div>
                     <a href="/en/start-and-run-business/koronaviruset-og-din-virksomhet/"

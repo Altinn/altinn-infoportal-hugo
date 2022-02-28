@@ -2,5 +2,10 @@
 title: Før oppstart
 description:
 weight: 1
-promote: false
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+    promote: false
+    list_view: false
 ---

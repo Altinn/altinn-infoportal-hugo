@@ -6,7 +6,12 @@ description: Altinn brukerservice hjelper deg med innlogging, navigering,
 jumbotron_help: true
 cascade:
   type: help
-show_ays: true
+features:
+  - need_help: false
+    show_ays: true
+    promote: false
+    list_view: true
+    toc: false
 ---
 ## Spørsmål du kanskje har
 

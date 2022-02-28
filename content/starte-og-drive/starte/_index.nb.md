@@ -1,10 +1,10 @@
 ---
 title: Starte bedrift
-need_help: false
-promote: true
-page: false
 weight: 1
-show_ays: false
+lastmod: 2022-02-23
 description: Test
-list_view: true
+features:
+  - need_help: false
+    promote: true
+    list_view: true
 ---
