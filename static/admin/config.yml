@@ -1,17 +1,15 @@
-#publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 backend:
   name: github
   branch: main
   repo: altinn/altinn-infoportal
-  auth_scope: repo
-  open_authoring: true 
 
 local_backend: true
 
 i18n:
   structure: multiple_files
-  locales: [nb,en]
+  locales: [nb,en,nn]
   default_locale: nb
 
 media_folder: static/img
