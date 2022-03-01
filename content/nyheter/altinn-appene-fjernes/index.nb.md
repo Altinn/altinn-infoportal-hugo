@@ -1,9 +1,15 @@
 ---
 title: Altinn-appene fjernes
 lastmod: 2020-01-22
-description: Fra og med januar 2020 fjernes Altinn-appene fra Apple store og Play store.
+seo_keywords: altinn kategori artikkel
 cmsedit: true
 didyoufind: false
+description: Fra og med januar 2020 fjernes Altinn-appene fra Apple store og Play store.
+features:
+  - toc: false
+    need_help: false
+    show_ays: false
+seo_description: En kort beskrivelse av innhold
 ---
 Grunnen er at Altinn ikke lenger satser på disse appene etter innføringen av ny produktstrategi.
 

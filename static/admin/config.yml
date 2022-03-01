@@ -4,14 +4,12 @@ backend:
   name: github
   branch: main
   repo: altinn/altinn-infoportal
-  auth_scope: repo
-  open_authoring: true 
 
 local_backend: true
 
 i18n:
   structure: multiple_files
-  locales: [nb,en]
+  locales: [nb,en,nn]
   default_locale: nb
 
 media_folder: static/img
@@ -37,11 +35,11 @@ collections:
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: true}
       # SETTINGS FIELDS
-      - label: "Instillinger"
+      - label: "Innstillinger"
         name: "features"
         widget: "list"
         i18n: true
-        summary: 'Instillinger'
+        summary: 'Innstillinger'
         min: 1
         max: 1
         fields:
@@ -74,11 +72,11 @@ collections:
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true }
       # SETTINGS FIELDS
-      - label: "Instillinger"
+      - label: "Innstillinger"
         name: "features"
         widget: "list"
         i18n: true
-        summary: 'Instillinger'
+        summary: 'Innstillinger'
         min: 1
         max: 1
         fields:
@@ -115,11 +113,11 @@ collections:
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
       # SETTINGS FIELDS
-      - label: "Instillinger"
+      - label: "Innstillinger"
         name: "features"
         widget: "list"
         i18n: true
-        summary: 'Instillinger'
+        summary: 'Innstillinger'
         min: 1
         max: 1
         fields:
@@ -156,11 +154,11 @@ collections:
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: false }
       - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
       # SETTINGS FIELDS
-      - label: "Instillinger"
+      - label: "Innstillinger"
         name: "features"
         widget: "list"
         i18n: true
-        summary: 'Instillinger'
+        summary: 'Innstillinger'
         min: 1
         max: 1
         fields:
