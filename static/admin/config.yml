@@ -33,7 +33,7 @@ collections:
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: true}
+      - { label: 'Brødtekst', name: 'body', widget: 'markdown', i18n: true, required: true}
       # SETTINGS FIELDS
       - label: "Innstillinger"
         name: "features"
@@ -70,7 +70,7 @@ collections:
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true }
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true }
-      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'Brødtekst', name: 'body', widget: 'markdown', i18n: true }
       # SETTINGS FIELDS
       - label: "Innstillinger"
         name: "features"
@@ -111,7 +111,7 @@ collections:
       # CONTENT
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: true }
-      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
+      - { label: 'Brødtekst', name: 'body', widget: 'markdown', i18n: true, required: false}
       # SETTINGS FIELDS
       - label: "Innstillinger"
         name: "features"
@@ -152,7 +152,7 @@ collections:
       - { label: 'Tittel', name: 'title', widget: 'string', i18n: true, required: true }
       - { label: 'Sist endret dato', name: 'lastmod', widget: 'date', i18n: true, format: "YYYY-MM-DD" }
       - { label: 'Ingress', name: 'description', widget: 'text', i18n: true, required: false }
-      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true, required: false}
+      - { label: 'Brødtekst', name: 'body', widget: 'markdown', i18n: true, required: false}
       # SETTINGS FIELDS
       - label: "Innstillinger"
         name: "features"
@@ -205,4 +205,4 @@ collections:
         multiple: true
         i18n: duplicate
       - { label: 'Navn på blokk', name: 'title', widget: 'string', i18n: duplicate }
-      - { label: 'Innhold', name: 'body', widget: 'markdown', i18n: true}
+      - { label: 'Brødtekst', name: 'body', widget: 'markdown', i18n: true}
