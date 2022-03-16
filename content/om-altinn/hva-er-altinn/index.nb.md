@@ -30,7 +30,7 @@ Dette har ført til innsparinger i milliardklassen for både det offentlige og n
 Altinn inneholder mye nyttig informasjon for gründere og små/mellomstore bedrifter under Starte og drive bedrift på Altinn.no.
 Her finnes også oversikt over statlige støtteordninger til næringslivet.
 I en EU-ledet evaluering av brukervennlighet og informasjonskvalitet som ble publisert i 2018, scoret Starte og drive bedrift-seksjonen i Altinn høyest innen EU/EØS.
-Det er Brønnøysundregistrenes seksjon for forenkling i Narvik som har ansvaret for innholdet.
+Det er Brønnøysundregistrene som har ansvaret for innholdet.
 
 ## Innovasjon og offentlig-privat samarbeid
 Gjennom arbeid i innovasjonsprogrammet Innovation@altinn har Altinn blitt sterkt involvert i det offentlig-private samarbeidet DSOP, Digital Samhandling Offentlig-Privat.
