@@ -4,8 +4,4 @@ category:
   - STARTE OG DRIVE
 title: TEST BLOKK
 ---
-
-
-* **Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda.**
-* **Bonum patria: miserum exilium. Duo Reges: constructio interrete. In schola desinis.**
-* **Universa enim illorum ratione cum tota vestra confligendum puto.**
+**TEST 2 DEMO**

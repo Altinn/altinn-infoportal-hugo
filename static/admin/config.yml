@@ -4,6 +4,8 @@ backend:
   name: github
   branch: main
   repo: altinn/altinn-infoportal
+  base_url: http://user.domain.local/auth/realms/difi/login-actions
+  #auth_endpoint: /authenticate?execution=aa96536a-8fe6-4342-bd65-666c8d8a1c09&client_id=intranett&tab_id=2uxT34y2Kgc
 
 local_backend: true
 
@@ -24,6 +26,7 @@ collections:
     label: 'Nyheter'
     folder: 'content/nyheter'
     path: '{{slug}}/index'
+    preview_path: nyheter/{{slug}}
     filter: {field: "cmsedit", value: true}
     media_folder: ''
     public_folder: ''
