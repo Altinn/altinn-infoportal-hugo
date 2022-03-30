@@ -67,3 +67,11 @@
 # SHORTCODES
 - id: on-this-page
   translation: På denne sida
+
+# Search
+- id: news-filter
+  translation: Nyheiter
+- id: help-filter
+  translation: Hjelp
+- id: limit-search
+  translation: Avgrens treffa

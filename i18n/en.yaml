@@ -67,3 +67,11 @@
 # SHORTCODES
 - id: on-this-page
   translation: On this page
+
+# Search
+- id: news-filter
+  translation: News
+- id: help-filter
+  translation: Help
+- id: limit-search
+  translation: Refine results

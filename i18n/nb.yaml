@@ -73,3 +73,11 @@
 # SHORTCODES
 - id: on-this-page
   translation: På denne siden
+
+# Search
+- id: news-filter
+  translation: Nyheter
+- id: help-filter
+  translation: Hjelp
+- id: limit-search
+  translation: Avgrens treffene
