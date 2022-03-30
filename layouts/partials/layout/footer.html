@@ -10,12 +10,12 @@
                 <nav class="a-footerNav">
                     <ul>
                         <li>
-                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.URL}}{{end}}">
+                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.RelPermalink}}{{end}}">
                                 <i class="ai ai-nw ai-corp" aria-hidden="true"></i> {{ T "start-and-run-business"}}
                             </a>
                         </li>
                         <li>
-                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.URL}}{{end}}">
+                            <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.RelPermalink}}{{end}}">
                                 <i class="ai ai-nw ai-phone" aria-hidden="true"></i> {{ T "help-and-contact"}}
                             </a>
                         </li>
@@ -35,13 +35,13 @@
                     </div>
                     <ul>
                         <li>
-                            <a class="d-none d-md-inline" href="{{ with .Site.GetPage `/om-altinn`}}{{.URL}}{{end}}">{{ T "about-altinn"}}</a>
+                            <a class="d-none d-md-inline" href="{{ with .Site.GetPage `/om-altinn`}}{{.RelPermalink}}{{end}}">{{ T "about-altinn"}}</a>
                         </li>
                         <li>
-                            <a href="{{ with .Site.GetPage `/om-altinn/driftsmeldinger`}}{{.URL}}{{end}}">{{ T "service-announcements"}}</a>
+                            <a href="{{ with .Site.GetPage `/om-altinn/driftsmeldinger`}}{{.RelPermalink}}{{end}}">{{ T "service-announcements"}}</a>
                         </li>
                         <li>
-                            <a href="{{ with .Site.GetPage `/om-altinn/personvern`}}{{.URL}}{{end}}">{{ T "privacy-and-cookies"}}</a>
+                            <a href="{{ with .Site.GetPage `/om-altinn/personvern`}}{{.RelPermalink}}{{end}}">{{ T "privacy-and-cookies"}}</a>
                         </li>
                     </ul>
                 </nav>
