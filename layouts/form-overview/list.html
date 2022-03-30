@@ -1,129 +1,248 @@
 {{ define "main" }}
 
-    {{ .Scratch.Set "search-placeholder" "search-for-content" }}
-    {{ .Scratch.Set "search-id" "search-main" }}
-    {{ partial "search/search-component.html" . }}
+{{ .Scratch.Set "search-placeholder" "search-for-content" }}
+{{ .Scratch.Set "search-id" "search-main" }}
+{{ partial "search/search-component.html" . }}
 
-    <section id="content" tabindex="-1" class="a-containerColnav">
-        <div class="container">
-            <!--
+<section id="content" tabindex="-1" class="a-containerColnav">
+    <div class="container">
+        <!--
             <div class="a-loader a-js-drilldownLoader" style="display: none;">
                 <div class="loader loader-ellipsis"></div>
             </div>
             -->
-            <div class="row a-containerColnav-top">
-                <div class="col-sm-12 col-md-6 col-lg-9">
-                    <h1>
-                        <span class="a-fontBold a-js-colnavTitleBold"></span>
-                        <span class="a-js-colnavTitleRegular">Alle skjema</span>
-                    </h1>
+        <div class="row a-containerColnav-top">
+            <div class="col-sm-12 col-md-6 col-lg-9">
+                <h1>
+                    <span class="a-fontBold a-js-colnavTitleBold"></span>
+                    <span class="a-js-colnavTitleRegular">Alle skjema</span>
+                </h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3" data-switchurl1="getcategory" data-switchurl2="getprovider"
+                data-switchendpoint="/inforportalapi/no/">
+                <fieldset class="switch-container">
+                    <legend class="sr-only">Bytt mellom to valg</legend>
+                    <div class="radio">
+                        <input class="sr-only" type="radio" id="atom-switch-cb1" name="js-switchForm" checked=""
+                            data-switchurl="getcategory">
+                        <label for="atom-switch-cb1">Kategorier</label>
+                    </div>
+                    <div class="radio">
+                        <input class="sr-only" type="radio" id="atom-switch-cb2" name="js-switchForm"
+                            data-switchurl="getprovider">
+                        <label for="atom-switch-cb2">Etater</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="container a-container-fluid-small">
+        <div class="a-contentOverview">
+            <div class="row">
+                <div class="a-colnav-wrapper col-sm-12 col-lg-6">
+                    <div class="a-js-backButton"><i class="ai ai-back"></i>Tilbake
+                    </div>
+                    <ul class="a-colnav a-colnav-vertical a-colnav-firstLevel dropdown"
+                        data-responsive-menu="drilldown xlarge-dropdown" id="colnav" data-disable-hover="true"
+                        data-click-open="true" data-close-on-click="false" data-force-follow="true"
+                        data-colnav-depth="0" data-zf-plugin="responsive-menu" role="menubar" style="display: block;"
+                        data-dropdown-menu="ptc1hs-dropdown-menu">
+                        <li data-level="1" data-index="0" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true" aria-label="For privatpersontjenester du bruker på vegne av deg selv">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30228">For privatperson</h2>
+                                <p class="a-leadText">tjenester du bruker på vegne av deg selv</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="1" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Skatt, avgift og regnskaprapportering av økonomiske forhold"><a tabindex="0"
+                                class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30119">Skatt, avgift og regnskap</h2>
+                                <p class="a-leadText">rapportering av økonomiske forhold</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="2" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Helse, miljø og sikkerhetsom f.eks. HMS-rapportering, miljø- og ulykkesrapportering">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30120">Helse, miljø og sikkerhet</h2>
+                                <p class="a-leadText">som f.eks. HMS-rapportering, miljø- og ulykkesrapportering</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="3" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Lønn og personalarbeidsgiverrapportering når man har ansatte"><a tabindex="0"
+                                class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30121">Lønn og personal</h2>
+                                <p class="a-leadText">arbeidsgiverrapportering når man har ansatte</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="4" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Starte, endre, avviklestifte og registrere virksomhet, gjøre endringer og avslutte virksomhet">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30122">Starte, endre, avvikle</h2>
+                                <p class="a-leadText">stifte og registrere virksomhet, gjøre endringer og avslutte
+                                    virksomhet</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="5" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Forhold ved virksomhetensom f.eks. eierskap, dokumentasjon og immaterielle rettigheter">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30194">Forhold ved virksomheten</h2>
+                                <p class="a-leadText">som f.eks. eierskap, dokumentasjon og immaterielle rettigheter</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="6" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="For enkeltbransjertjenester som kun er aktuelle for bestemte bransjer"><a
+                                tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30198">For enkeltbransjer</h2>
+                                <p class="a-leadText">tjenester som kun er aktuelle for bestemte bransjer</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="7" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Tillatelser og kvalifikasjonersom f.eks. sertifikater og autorisasjoner for å drive virksomhet">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="30209">Tillatelser og kvalifikasjoner</h2>
+                                <p class="a-leadText">som f.eks. sertifikater og autorisasjoner for å drive virksomhet
+                                </p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="8" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Tilskudd, støtte og erstatningNB! Se også oversikt over støtteordninger under Starte og drive bedrift">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="45391">Tilskudd, støtte og erstatning</h2>
+                                <p class="a-leadText">NB! Se også oversikt over støtteordninger under Starte og drive
+                                    bedrift</p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                        <li data-level="1" data-index="9" class="is-dropdown-submenu-parent opens-right" role="menuitem"
+                            aria-haspopup="true"
+                            aria-label="Godkjenning av utenlandske yrkeskvalifikasjonerEr du statsborger i en EU/EØS-stat og ønsker å utøve yrket ditt i Norge? Da er det viktig å undersøke om du trenger godkjenning for å kunne jobbe. ">
+                            <a tabindex="0" class="a-colnav-item a-js-colnavLink">
+                                <h2 data-id="60578">Godkjenning av utenlandske yrkeskvalifikasjoner</h2>
+                                <p class="a-leadText">Er du statsborger i en EU/EØS-stat og ønsker å utøve yrket ditt i
+                                    Norge? Da er det viktig å undersøke om du trenger godkjenning for å kunne jobbe.
+                                </p>
+                            </a>
+                            <ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical"
+                                data-submenu="" role="menu"></ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3" data-switchurl1="getcategory" data-switchurl2="getprovider" data-switchendpoint="/inforportalapi/no/">
-                    <fieldset class="switch-container">
-                        <legend class="sr-only">Bytt mellom to valg</legend>
-                        <div class="radio">
-                            <input class="sr-only" type="radio" id="atom-switch-cb1" name="js-switchForm" checked="" data-switchurl="getcategory">
-                            <label for="atom-switch-cb1">Kategorier</label>
-                        </div>
-                        <div class="radio">
-                            <input class="sr-only" type="radio" id="atom-switch-cb2" name="js-switchForm" data-switchurl="getprovider">
-                            <label for="atom-switch-cb2">Etater</label>
-                        </div>
-                    </fieldset>
+                <div class="col-sm-12 col-lg-6 a-containerColnav-right">
+                    <h2 class="pt-5">Ofte brukte skjema og tjenester:</h2>
+                    <div class="a-list-container">
+                        <ul class="a-list a-list-borderTop a-list-noIcon">
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/bronnoysundregistrene/kompensasjonsordning-for-naringslivet/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Kompensasjonsordning for næringslivet (september 2020 - februar 2022)
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/a-ordningen/a-melding2/" class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            A-melding – alle skjema
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/skatteetaten/attestbestilling-/" class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Attestbestilling
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/bronnoysundregistrene/produkter-og-tjenester-fra-bronnoysundregistrene/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Produkter og tjenester fra Brønnøysundregistrene
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Registrere nye og endre eksisterende virksomheter - Samordnet
+                                            registermelding
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/skatteetaten/kontaktskjema---skatteetaten-privatperson/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Kontaktskjema - Skatteetaten (privatperson)
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/skatteetaten/kontaktskjema---skatteetaten-naringsdrivende-/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Kontaktskjema - Skatteetaten (næringsdrivende)
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="a-dotted a-clickable a-list-hasRowLink">
+                                <a href="/skjemaoversikt/skatteetaten/skattemelding-for-formues--og-inntektsskatt----aksjeselskap-mv/"
+                                    class="a-list-rowLink">
+                                    <div class="row">
+                                        <div class="col">
+                                            Skattemelding for formues- og inntektsskatt - aksjeselskap mv. 2021
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="container a-container-fluid-small">
-            <div class="a-contentOverview">
-                <div class="row">
-                    <div class="a-colnav-wrapper col-sm-12 col-lg-6">
-                        <div class="a-js-backButton"><i class="ai ai-back"></i>Tilbake
-                        </div>
-                        <ul class="a-colnav a-colnav-vertical a-colnav-firstLevel dropdown" data-responsive-menu="drilldown xlarge-dropdown" id="colnav" data-disable-hover="true" data-click-open="true" data-close-on-click="false" data-force-follow="true" data-colnav-depth="0" data-zf-plugin="responsive-menu" role="menubar" style="display: block;" data-dropdown-menu="ptc1hs-dropdown-menu"><li data-level="1" data-index="0" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="For privatpersontjenester du bruker på vegne av deg selv"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30228">For privatperson</h2><p class="a-leadText">tjenester du bruker på vegne av deg selv</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="1" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Skatt, avgift og regnskaprapportering av økonomiske forhold"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30119">Skatt, avgift og regnskap</h2><p class="a-leadText">rapportering av økonomiske forhold</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="2" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Helse, miljø og sikkerhetsom f.eks. HMS-rapportering, miljø- og ulykkesrapportering"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30120">Helse, miljø og sikkerhet</h2><p class="a-leadText">som f.eks. HMS-rapportering, miljø- og ulykkesrapportering</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="3" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Lønn og personalarbeidsgiverrapportering når man har ansatte"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30121">Lønn og personal</h2><p class="a-leadText">arbeidsgiverrapportering når man har ansatte</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="4" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Starte, endre, avviklestifte og registrere virksomhet, gjøre endringer og avslutte virksomhet"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30122">Starte, endre, avvikle</h2><p class="a-leadText">stifte og registrere virksomhet, gjøre endringer og avslutte virksomhet</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="5" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Forhold ved virksomhetensom f.eks. eierskap, dokumentasjon og immaterielle rettigheter"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30194">Forhold ved virksomheten</h2><p class="a-leadText">som f.eks. eierskap, dokumentasjon og immaterielle rettigheter</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="6" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="For enkeltbransjertjenester som kun er aktuelle for bestemte bransjer"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30198">For enkeltbransjer</h2><p class="a-leadText">tjenester som kun er aktuelle for bestemte bransjer</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="7" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Tillatelser og kvalifikasjonersom f.eks. sertifikater og autorisasjoner for å drive virksomhet"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="30209">Tillatelser og kvalifikasjoner</h2><p class="a-leadText">som f.eks. sertifikater og autorisasjoner for å drive virksomhet</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="8" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Tilskudd, støtte og erstatningNB! Se også oversikt over støtteordninger under Starte og drive bedrift"><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="45391">Tilskudd, støtte og erstatning</h2><p class="a-leadText">NB! Se også oversikt over støtteordninger under Starte og drive bedrift</p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li><li data-level="1" data-index="9" class="is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="Godkjenning av utenlandske yrkeskvalifikasjonerEr du statsborger i en EU/EØS-stat og ønsker å utøve yrket ditt i Norge? Da er det viktig å undersøke om du trenger godkjenning for å kunne jobbe. "><a tabindex="0" class="a-colnav-item a-js-colnavLink"><h2 data-id="60578">Godkjenning av utenlandske yrkeskvalifikasjoner</h2><p class="a-leadText">Er du statsborger i en EU/EØS-stat og ønsker å utøve yrket ditt i Norge? Da er det viktig å undersøke om du trenger godkjenning for å kunne jobbe. </p></a><ul class="a-colnav a-colnav-vertical a-colnav-secondLevel submenu is-dropdown-submenu first-sub vertical" data-submenu="" role="menu"></ul></li></ul>
-                    </div>
-                    <div class="col-sm-12 col-lg-6 a-containerColnav-right">
-                <h2 class="pt-5">Ofte brukte skjema og tjenester:</h2>
-            <div class="a-list-container">
-                <ul class="a-list a-list-borderTop a-list-noIcon">
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/bronnoysundregistrene/kompensasjonsordning-for-naringslivet/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Kompensasjonsordning for næringslivet (september 2020 - februar 2022)
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/a-ordningen/a-melding2/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        A-melding – alle skjema
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/skatteetaten/attestbestilling-/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Attestbestilling 
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/bronnoysundregistrene/produkter-og-tjenester-fra-bronnoysundregistrene/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Produkter og tjenester fra Brønnøysundregistrene
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/bronnoysundregistrene/registrere-nye-og-endre-eksisterende-foretak-og-enheter---samordnet-registermelding/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Registrere nye og endre eksisterende virksomheter - Samordnet registermelding
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/skatteetaten/kontaktskjema---skatteetaten-privatperson/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Kontaktskjema - Skatteetaten (privatperson)
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/skatteetaten/kontaktskjema---skatteetaten-naringsdrivende-/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Kontaktskjema - Skatteetaten (næringsdrivende) 
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="a-dotted a-clickable a-list-hasRowLink">
-                            <a href="/skjemaoversikt/skatteetaten/skattemelding-for-formues--og-inntektsskatt----aksjeselskap-mv/" class="a-list-rowLink">
-                                <div class="row">
-                                    <div class="col">
-                                        Skattemelding for formues- og inntektsskatt  - aksjeselskap mv. 2021
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                </ul>
-            </div>
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 
 {{ end }}

@@ -49,6 +49,5 @@ noHomeIcon = true # default is false
 noSearch = true # default is false
 showVisitedLinks = false # default is false
 
-
 [outputs]
 home = ["HTML", "JSON"] # JSON generates index.json file used by search
