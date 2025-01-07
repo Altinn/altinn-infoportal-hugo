@@ -21,7 +21,7 @@
 
                             {{ range .Pages }}
                                 {{ $title := .Title }}
-                                {{ $permalink := .Permalink }}
+                                {{ $permalink := .RelPermalink }}
                                 {{ range .Params.features }}
                                     {{ if eq .promote true }}
                                     <li class="a-dotted a-clickable a-list-hasRowLink">

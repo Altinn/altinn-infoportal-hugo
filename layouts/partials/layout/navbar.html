@@ -40,7 +40,7 @@
                 <div class="dropdown-menu a-dropdown-languages a-dropdownTriangle">
                   {{ if .Site.IsMultiLingual }}
                     {{ range .AllTranslations }}
-                    <a aria-hidden="true" class="dropdown-item" href="{{ .URL }}">
+                    <a aria-hidden="true" class="dropdown-item" href="{{ .RelPermalink }}">
                       <img src="/Static/img/{{ .Language }}.svg" class="a-iconLeft a-flag" alt="" />
                       <p>
                         <span class="a-h3">{{ .Language.LanguageName }}</span><br>
@@ -66,7 +66,7 @@
                 </a>
               </li>
               <li>
-                <a class="" href="{{ with .Site.GetPage `/skjemaoversikt`}}{{.URL}}{{end}}">
+                <a class="" href="{{ with .Site.GetPage `/skjemaoversikt`}}{{.RelPermalink}}{{end}}">
                   <span class="a-hvr-underline">{{ T "all-forms" }}</span>
                 </a>
               </li>
@@ -76,17 +76,17 @@
                 </a>
               </li>
               <li class="d-md-none">
-                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.URL}}{{end}}">
+                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/starte-og-drive`}}{{.RelPermalink}}{{end}}">
                   {{ T "start-and-run-business" }}
                 </a>
               </li>
               <li class="d-md-none">
-                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/om-altinn`}}{{.URL}}{{end}}">
+                <a class="a-nav-link a-hvr-underline" href="{{ with .Site.GetPage `/om-altinn`}}{{.RelPermalink}}{{end}}">
                   {{ T "about-altinn" }}
                 </a>
               </li>
               <li class="d-md-none">
-                <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.URL}}{{end}}">
+                <a class="a-hvr-underline" href="{{ with .Site.GetPage `/hjelp`}}{{.RelPermalink}}{{end}}">
                   <i class="ai ai-nw ai-nw-pr ai-phone" aria-hidden="true"></i> {{ T "help-and-contact" }}
                 </a>
               </li>
@@ -104,7 +104,7 @@
 
               {{ if .Site.IsMultiLingual }}
                 {{ range .AllTranslations }}
-                <a class="dropdown-item" href="{{ .URL }}">
+                <a class="dropdown-item" href="{{ .RelPermalink }}">
                   <img src="/Static/img/{{ .Language }}.svg" class="a-iconLeft a-flag" alt="" />
                   <p>
                     <span class="a-h3">{{ .Language.LanguageName }}</span><br>

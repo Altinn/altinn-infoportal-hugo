@@ -1,8 +1,6 @@
 # Infoportal
 
-[![Build status](https://dev.azure.com/brreg/altinn-infoportal/_apis/build/status/altinn-infoportal-CI?label=altinn/infoportal)](https://dev.azure.com/brreg/altinn-infoportal/_build/latest?definitionId=217)
-
-This solution is the implementation of [portfolio #7](https://github.com/Altinn/dig-portfolio/issues/7).
+This repo is a PoC for [portfolio #7](https://github.com/Altinn/dig-portfolio/issues/7).
 
 [infoportal.no](https://infoportal.no)
 ![Infoportal frontpage](https://user-images.githubusercontent.com/6088624/150494503-4df3e725-432c-4204-ad9d-6b23f8df5319.png "Infoportal frontpage")
@@ -12,12 +10,12 @@ This solution is the implementation of [portfolio #7](https://github.com/Altinn/
 1. Clone the repo (assumes you've installed [Git](https://git-scm.com/downloads)):
    ```shell
    cd C:/repos
-   git clone https://github.com/Altinn/altinn-infoportal
+   git clone https://github.com/Altinn/altinn-infoportal-hugo
    ```
-2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable for your OS into the new `altinn-infoportal` folder.   
+2. [Download Hugo](https://github.com/gohugoio/hugo/releases) (v0.80.0 or newer), and copy the executable for your OS into the new `altinn-infoportal-hugo` folder.   
 3. Navigate to folder and run Hugo
    ```shell
-   cd altinn-infoportal
+   cd altinn-infoportal-hugo
    ./hugo serve --navigateToChanged
    ```
 
