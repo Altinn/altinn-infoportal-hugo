@@ -1,7 +1,7 @@
 <div class="pt-3 pb-3">
 {{ range $index_child, $child := .Page.Pages }}
 <p>
-    <a href="{{.Permalink}}">
+    <a href="{{.RelPermalink}}">
         {{.Title}}
     </a>
 </p>
